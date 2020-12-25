@@ -1,4 +1,4 @@
-﻿const objIdEmpty = 'ObjectId("")';
+﻿const objIdEmpty = 'ObjectId("000000000000000000000000")';
 const objIdTenant = 'ObjectId("57b2229fd00bc11c2c18ec3d")';
 
 $(document).ready(function () {
