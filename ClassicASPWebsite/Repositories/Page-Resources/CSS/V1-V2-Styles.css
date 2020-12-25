@@ -9,8 +9,16 @@
     padding: 10px;
 }
 
-.div-switch-panel-item
+#div-system-messages
 {
+    display: none;
+}
+
+#span-tenant-info-container, #span-migration-info-container {
+    display: none;
+}
+
+.div-switch-panel-item {
     border-top: dashed 1px #808080;
     padding: 10px;
 }
@@ -27,9 +35,10 @@ input {
     color: #ff0000;
 }
 
-.span-option-item
-{
-    padding-left: 10px;
+.span-option-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: solid 0px #ff0000 !important;
 }
 
 .span-item-detail {

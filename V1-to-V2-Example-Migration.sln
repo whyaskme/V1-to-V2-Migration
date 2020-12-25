@@ -9,6 +9,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "V2-Node-Services", "V2-Node
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libraries", "Libraries\Libraries.csproj", "{DB5B43E4-75DC-4638-AAAE-757E3AD8A56F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationServices", "MigrationServices\MigrationServices.csproj", "{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DB5B43E4-75DC-4638-AAAE-757E3AD8A56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB5B43E4-75DC-4638-AAAE-757E3AD8A56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB5B43E4-75DC-4638-AAAE-757E3AD8A56F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
