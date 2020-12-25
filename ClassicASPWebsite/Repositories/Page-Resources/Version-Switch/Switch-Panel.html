@@ -4,7 +4,7 @@
 <div id="div-version-switch-panel">
     <h1>Volusion Platform Switch</h1>
     <div class="div-switch-panel-item">
-        <label>Versions:&nbsp;
+        <label>Version:&nbsp;
             <span class="span-option-item">
                 <input type="radio" checked name="opt-version" value="v1" onselect="javascript: setVersion();"> v1
             </span>
@@ -15,12 +15,12 @@
     </div>
     <div class="div-switch-panel-item">
         <span class="span-item-detail">
-            <label for="span-repository-type">Repository:</label>
-            <span id="span-repository-type">???</span>
+            <label for="span-repository-type">Repo Source:</label>
+            <span id="span-repository-type">Database</span>
         </span>
         <span class="span-item-detail">
             <label for="hidden-tenantId">TenantId:</label>
-            <span id="span-tenantId">ObjectId</span>
+            <span id="span-tenantId">ObjectId("57b2229fd00bc11c2c18ec3d")</span>
         </span>
         <span class="span-item-detail">
             <label>IsMigrated&nbsp;
@@ -32,5 +32,9 @@
                 </span>
             </label>
         </span>
+    </div>
+    <div id="div-system-messages" class="div-switch-panel-item">
+        <label for="hidden-tenantId">Message:</label>
+        <div id="div-message-details">Nothing to see here...</div>
     </div>
 </div>

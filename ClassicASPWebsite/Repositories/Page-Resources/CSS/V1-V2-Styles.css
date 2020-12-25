@@ -37,3 +37,9 @@ input {
     margin-right: 15px;
     padding-right: 15px;
 }
+
+#div-message-details {
+    border-top: solid 0px #808080;
+    padding: 15px;
+    font-style: italic;
+}
