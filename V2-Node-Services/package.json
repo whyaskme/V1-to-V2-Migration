@@ -1,0 +1,9 @@
+{
+  "name": "v2-node-services",
+  "version": "0.0.0",
+  "description": "V2-Node-Services",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
