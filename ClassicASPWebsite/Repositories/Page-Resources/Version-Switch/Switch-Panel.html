@@ -1,15 +1,36 @@
 ﻿<link href="../Repositories/Page-Resources/CSS/V1-V2-Styles.css" rel="stylesheet" />
+<script src="../JS/version-switch.js"></script>
 
 <div id="div-version-switch-panel">
-    <h1>Version Switch</h1>
-    <div>
-        <label for="span-repository-type">Repository</label>
-        <span id="span-repository-type">Repo Type Name</span>
+    <h1>Volusion Platform Switch</h1>
+    <div class="div-switch-panel-item">
+        <label>Versions:&nbsp;
+            <span class="span-option-item">
+                <input type="radio" checked name="opt-version" value="v1" onselect="javascript: setVersion();"> v1
+            </span>
+            <span class="span-option-item">
+                <input type="radio" name="opt-version" value="v2" onselect="javascript: setVersion();"> v2
+            </span>
+        </label>
     </div>
-    <div id="div-tenant-hidden-fields">
-        <label for="hidden-tenantId">TenantId</label>
-        <input type="text" id="hidden-tenantId" value="MyTenantId" />
-        <label for="hidden-tenantId">Migration Completed</label>
-        <input type="text" id="hidden-migration-completed" value="false" />
+    <div class="div-switch-panel-item">
+        <span class="span-item-detail">
+            <label for="span-repository-type">Repository:</label>
+            <span id="span-repository-type">???</span>
+        </span>
+        <span class="span-item-detail">
+            <label for="hidden-tenantId">TenantId:</label>
+            <span id="span-tenantId">ObjectId</span>
+        </span>
+        <span class="span-item-detail">
+            <label>IsMigrated&nbsp;
+                <span class="span-option-item">
+                    <input type="radio" checked name="opt-isMigrated" value="false"> false
+                </span>
+                <span class="span-option-item">
+                    <input type="radio" name="opt-isMigrated" value="true"> true
+                </span>
+            </label>
+        </span>
     </div>
 </div>

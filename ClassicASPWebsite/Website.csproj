@@ -75,6 +75,7 @@
     <Content Include="default.asp" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Repositories\Page-Resources\CSS\V1-V2-Styles.css" />
+    <Content Include="Repositories\Page-Resources\JS\version-switch.js" />
     <Content Include="Repositories\Page-Resources\V1\Header\header.html" />
     <Content Include="Repositories\Page-Resources\V2\Header\header.html" />
     <Content Include="Repositories\Page-Resources\V2\Header\header_bg_v2.jpg" />
