@@ -20,3 +20,4 @@ C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\De
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\Volusion.Utilities.csproj.CopyComplete
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\Volusion.Utilities.dll
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\Volusion.Utilities.pdb
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\Volusion.Utilities.csprojAssemblyReference.cache

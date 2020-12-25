@@ -246,6 +246,16 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibraries\Volusion.Utilities.csproj">
+      <Project>{12a59c33-f1df-46f6-8820-c8bf7f8209d9}</Project>
+      <Name>Volusion.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositories\Volusion.Data.Repositories.csproj">
+      <Project>{13322803-4f0d-4d9b-a889-0dec7b285b99}</Project>
+      <Name>Volusion.Data.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

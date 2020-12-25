@@ -1,0 +1,3 @@
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.AssemblyInfoInputs.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.AssemblyInfo.cs
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.csproj.CoreCompileInputs.cache

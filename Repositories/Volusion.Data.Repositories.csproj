@@ -52,6 +52,10 @@
       <HintPath>..\packages\MongoDB.Libmongocrypt.1.0.0\lib\net452\MongoDB.Libmongocrypt.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SharpCompress, Version=0.23.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpCompress.0.23.0\lib\net45\SharpCompress.dll</HintPath>
     </Reference>
@@ -60,6 +64,7 @@
       <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
@@ -109,35 +114,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\AreaCode.cs" />
-    <Compile Include="Models\Base.cs" />
-    <Compile Include="Models\City.cs" />
-    <Compile Include="Models\ContactInfo.cs" />
-    <Compile Include="Models\Country.cs" />
-    <Compile Include="Models\County.cs" />
-    <Compile Include="Models\CreditCard.cs" />
-    <Compile Include="Models\Email.cs" />
-    <Compile Include="Models\Event.cs" />
-    <Compile Include="Models\Location.cs" />
-    <Compile Include="Models\Message.cs" />
-    <Compile Include="Models\Name.cs" />
-    <Compile Include="Models\NameFemale.cs" />
-    <Compile Include="Models\NameLast.cs" />
-    <Compile Include="Models\NameMale.cs" />
-    <Compile Include="Models\NameStreet.cs" />
-    <Compile Include="Models\Notification.cs" />
-    <Compile Include="Models\Phone.cs" />
-    <Compile Include="Models\Reference.cs" />
-    <Compile Include="Models\RenewalPeriod.cs" />
-    <Compile Include="Models\ServiceResponse.cs" />
-    <Compile Include="Models\SourceData.cs" />
-    <Compile Include="Models\State.cs" />
-    <Compile Include="Models\TimeZone.cs" />
-    <Compile Include="Models\Transaction.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Models\UserRole.cs" />
-    <Compile Include="Models\ZipCode.cs" />
     <Compile Include="MongoDB\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="MongoDB\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="MongoDB\Properties\AssemblyInfo.cs" />
@@ -208,6 +184,10 @@
     <ProjectReference Include="..\ClassLibraries\Volusion.Utilities.csproj">
       <Project>{12a59c33-f1df-46f6-8820-c8bf7f8209d9}</Project>
       <Name>Volusion.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volusion.Data.Models\Volusion.Data.Models.csproj">
+      <Project>{6b6fbe03-2dfb-4c2f-aca3-057bc2f48fde}</Project>
+      <Name>Volusion.Data.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

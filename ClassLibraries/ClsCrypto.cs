@@ -5,7 +5,7 @@ using System.IO;
 
 using System.Security.Cryptography;
 
-namespace Data.Repositories.Models
+namespace Volusion.Utilities
 {
     public class ClsCrypto
     {

@@ -4,7 +4,7 @@ using MongoDB;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace Data.Repositories.Models
+namespace Volusion.Utilities
 {
     public static class Constants
     {

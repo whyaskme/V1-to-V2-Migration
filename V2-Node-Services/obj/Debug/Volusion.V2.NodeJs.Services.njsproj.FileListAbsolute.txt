@@ -1,0 +1,2 @@
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\V2-Node-Services\obj\Debug\Volusion.V2.NodeJs.Services.njsproj.CoreCompileInputs.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\V2-Node-Services\bin\Microsoft.NodejsTools.WebRole.dll

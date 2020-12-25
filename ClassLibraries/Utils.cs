@@ -19,7 +19,7 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Core;
 
-namespace Data.Repositories.Models
+namespace Volusion.Utilities
 {
     public class Utils
     {
