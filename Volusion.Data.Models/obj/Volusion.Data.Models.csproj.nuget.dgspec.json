@@ -4,16 +4,6 @@
     "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Data.Models\\Volusion.Data.Models.csproj": {}
   },
   "projects": {
-    "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\ClassLibraries\\Volusion.Utilities.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\ClassLibraries\\Volusion.Utilities.csproj",
-        "projectName": "Volusion.Utilities",
-        "projectPath": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\ClassLibraries\\Volusion.Utilities.csproj"
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Data.Models\\Volusion.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -38,8 +28,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\ClassLibraries\\Volusion.Utilities.csproj": {
-                "projectPath": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\ClassLibraries\\Volusion.Utilities.csproj"
+              "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Utilities\\Volusion.Utilities.csproj": {
+                "projectPath": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Utilities\\Volusion.Utilities.csproj"
               }
             }
           }
@@ -77,6 +67,16 @@
           "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Utilities\\Volusion.Utilities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Utilities\\Volusion.Utilities.csproj",
+        "projectName": "Volusion.Utilities",
+        "projectPath": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Utilities\\Volusion.Utilities.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

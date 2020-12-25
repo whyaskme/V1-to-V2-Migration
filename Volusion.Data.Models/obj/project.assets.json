@@ -535,8 +535,8 @@
     },
     "Volusion.Utilities/1.0.0": {
       "type": "project",
-      "path": "../ClassLibraries/Volusion.Utilities.csproj",
-      "msbuildProject": "../ClassLibraries/Volusion.Utilities.csproj"
+      "path": "../Volusion.Utilities/Volusion.Utilities.csproj",
+      "msbuildProject": "../Volusion.Utilities/Volusion.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -573,8 +573,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\ClassLibraries\\Volusion.Utilities.csproj": {
-              "projectPath": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\ClassLibraries\\Volusion.Utilities.csproj"
+            "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Utilities\\Volusion.Utilities.csproj": {
+              "projectPath": "C:\\Joes Data\\Projects\\1 GitHub\\whyaskme\\V1-to-V2-Migration\\Volusion.Utilities\\Volusion.Utilities.csproj"
             }
           }
         }

@@ -181,13 +181,13 @@
     <Folder Include="WebServices\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibraries\Volusion.Utilities.csproj">
-      <Project>{12a59c33-f1df-46f6-8820-c8bf7f8209d9}</Project>
-      <Name>Volusion.Utilities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Volusion.Data.Models\Volusion.Data.Models.csproj">
       <Project>{6b6fbe03-2dfb-4c2f-aca3-057bc2f48fde}</Project>
       <Name>Volusion.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volusion.Utilities\Volusion.Utilities.csproj">
+      <Project>{12a59c33-f1df-46f6-8820-c8bf7f8209d9}</Project>
+      <Name>Volusion.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

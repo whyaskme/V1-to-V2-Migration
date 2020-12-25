@@ -1,3 +1,16 @@
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\mongocrypt.dll
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\snappy32.dll
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\snappy64.dll
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\libzstd.dll
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Data.Models.deps.json
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Data.Models.dll
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Data.Models.pdb
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Utilities.dll
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Utilities.pdb
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.csprojAssemblyReference.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.AssemblyInfoInputs.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.AssemblyInfo.cs
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.csproj.CoreCompileInputs.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.csproj.CopyComplete
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.dll
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.pdb

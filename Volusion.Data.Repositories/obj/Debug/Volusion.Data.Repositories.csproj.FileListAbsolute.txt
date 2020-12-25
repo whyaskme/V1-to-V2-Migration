@@ -1,0 +1,4 @@
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Repositories\obj\Debug\Volusion.Data.Repositories.csprojAssemblyReference.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Repositories\obj\Debug\Volusion.Data.Repositories.csproj.CoreCompileInputs.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Repositories\obj\Debug\Volusion.Data.Repositories.csprojAssemblyReference.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Repositories\obj\Debug\Volusion.Data.Repositories.csproj.CoreCompileInputs.cache

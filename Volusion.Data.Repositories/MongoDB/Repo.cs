@@ -33,7 +33,7 @@ namespace Data.Repositories.MongoDB
 
         IMongoCollection<SourceData> _mongoSourceDataCollection;
 
-        IMongoCollection<Data.Repositories.Models.TimeZone> _mongoTimeZoneCollection;
+        //IMongoCollection<Data.Models.TimeZone> _mongoTimeZoneCollection;
         IMongoCollection<Country> _mongoCountryCollection;
         IMongoCollection<State> _mongoStateCollection;
         IMongoCollection<County> _mongoCountyCollection;
@@ -525,62 +525,62 @@ namespace Data.Repositories.MongoDB
             return null;
         }
 
-        public ObjectId CreateCity(ObjectId countryId, string timeZoneName, string stateName, string countyName, string cityName)
-        {
-            ObjectId _timeZoneId = ObjectId.Empty;
-            ObjectId _stateId = ObjectId.Empty;
-            ObjectId _countyId = ObjectId.Empty;
-            ObjectId _cityId = ObjectId.Empty;
+        //public ObjectId CreateCity(ObjectId countryId, string timeZoneName, string stateName, string countyName, string cityName)
+        //{
+        //    ObjectId _timeZoneId = ObjectId.Empty;
+        //    ObjectId _stateId = ObjectId.Empty;
+        //    ObjectId _countyId = ObjectId.Empty;
+        //    ObjectId _cityId = ObjectId.Empty;
 
-            try
-            {
-                _mongoTimeZoneCollection = (IMongoCollection<Repositories.Models.TimeZone>)_mongoDatabase.GetCollection<TimeZone>("TimeZones");
-                var _timezones = _mongoTimeZoneCollection.Find<TimeZone>(s => s.Name == timeZoneName).ToListAsync<TimeZone>().Result;
-                foreach (TimeZone _timezone in _timezones)
-                    _timeZoneId = _timezone._id;
+        //    try
+        //    {
+        //        _mongoTimeZoneCollection = (IMongoCollection<Volusion.Data.Models.TimeZone>)_mongoDatabase.GetCollection<TimeZone>("TimeZones");
+        //        var _timezones = _mongoTimeZoneCollection.Find<TimeZone>(s => s.Name == timeZoneName).ToListAsync<TimeZone>().Result;
+        //        foreach (TimeZone _timezone in _timezones)
+        //            _timeZoneId = _timezone._id;
 
-                _mongoStateCollection = _mongoDatabase.GetCollection<State>("States");
-                var _states = _mongoStateCollection.Find<State>(s => s.Abbr == stateName).ToListAsync<State>().Result;
-                foreach (State _state in _states)
-                    _stateId = _state._id;
+        //        _mongoStateCollection = _mongoDatabase.GetCollection<State>("States");
+        //        var _states = _mongoStateCollection.Find<State>(s => s.Abbr == stateName).ToListAsync<State>().Result;
+        //        foreach (State _state in _states)
+        //            _stateId = _state._id;
 
-                _mongoCountyCollection = _mongoDatabase.GetCollection<County>("Counties");
-                var _counties = _mongoCountyCollection.Find<County>(s => s.Name == countyName && s.StateId == _stateId).ToListAsync<County>().Result;
-                foreach (County _county in _counties)
-                {
-                    _countyId = _county._id;
+        //        _mongoCountyCollection = _mongoDatabase.GetCollection<County>("Counties");
+        //        var _counties = _mongoCountyCollection.Find<County>(s => s.Name == countyName && s.StateId == _stateId).ToListAsync<County>().Result;
+        //        foreach (County _county in _counties)
+        //        {
+        //            _countyId = _county._id;
 
-                    // Update County TimeZoneId
-                    _county.TimeZoneId = _timeZoneId;
-                    var replaceOneResult = _mongoCountyCollection.ReplaceOneAsync(s => s._id == _county._id, _county);
-                }
+        //            // Update County TimeZoneId
+        //            _county.TimeZoneId = _timeZoneId;
+        //            var replaceOneResult = _mongoCountyCollection.ReplaceOneAsync(s => s._id == _county._id, _county);
+        //        }
 
-                // Get City by Name and CountyId to see if it exists, if not create it and return ObjectId
-                _mongoCityCollection = _mongoDatabase.GetCollection<City>("Cities");
-                var _cities = _mongoCityCollection.Find<City>(s => s.Name == cityName && s.CountyId == _countyId).ToListAsync<City>().Result;
-                if (_cities.Count < 1)
-                {
-                    City _newCity = new City();
+        //        // Get City by Name and CountyId to see if it exists, if not create it and return ObjectId
+        //        _mongoCityCollection = _mongoDatabase.GetCollection<City>("Cities");
+        //        var _cities = _mongoCityCollection.Find<City>(s => s.Name == cityName && s.CountyId == _countyId).ToListAsync<City>().Result;
+        //        if (_cities.Count < 1)
+        //        {
+        //            City _newCity = new City();
 
-                    _cityId = _newCity._id;
+        //            _cityId = _newCity._id;
 
-                    _newCity.Name = cityName;
+        //            _newCity.Name = cityName;
 
-                    _newCity.CountryId = countryId;
-                    _newCity.StateId = _stateId;
-                    _newCity.CountyId = _countyId;
-                    _newCity.TimeZoneId = _timeZoneId;
+        //            _newCity.CountryId = countryId;
+        //            _newCity.StateId = _stateId;
+        //            _newCity.CountyId = _countyId;
+        //            _newCity.TimeZoneId = _timeZoneId;
 
-                    _mongoCityCollection.InsertOne(_newCity);
-                }
-            }
-            catch (Exception ex)
-            {
-                var errMsg = ex.ToString();
-            }
+        //            _mongoCityCollection.InsertOne(_newCity);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        var errMsg = ex.ToString();
+        //    }
 
-            return _cityId;
-        }
+        //    return _cityId;
+        //}
 
         public void CreateSampleData()
         {
@@ -591,7 +591,7 @@ namespace Data.Repositories.MongoDB
                 var _sourceData = _mongoSourceDataCollection.Find<SourceData>(s => s._t == "SourceData").SortBy(s => s.StateAbbr).ToListAsync<SourceData>().Result;
                 foreach (SourceData _source in _sourceData)
                 {
-                    var cityId = CreateCity(_source.CountryId, _source.TimeZone, _source.StateAbbr, _source.County, _source.City);
+                    //var cityId = CreateCity(_source.CountryId, _source.TimeZone, _source.StateAbbr, _source.County, _source.City);
 
                     // Handle Countries from SourceData
                     //var _countries = _mongoCountryCollection.Find<Country>(s => s.Name == _source.Country).ToListAsync<Country>().Result;

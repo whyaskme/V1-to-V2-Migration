@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibraries\Volusion.Utilities.csproj" />
+    <ProjectReference Include="..\Volusion.Utilities\Volusion.Utilities.csproj" />
   </ItemGroup>
 
 </Project>
