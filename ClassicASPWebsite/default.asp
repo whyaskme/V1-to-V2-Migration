@@ -399,6 +399,9 @@
 </nav></div>
                 </nav><!-- /slide menu left -->
             <div class="page-wrap">
+
+                <!-- #include virtual="/Repositories/Page-Resources/Version-Switch/Switch-Panel.html" -->
+
                 <header class="header">
                     <div class="header__top">
                         <div class="container">
@@ -431,10 +434,21 @@
                                                     <svg class="search__icon"><use xlink:href="#svg-search"></use></svg>
                                                 </button>
                                             </form>
-                                        </div>                    </div>
+                                        </div>                    
+                                    </div>
                                     <div class="col-xs-6 text-center">
-                                        <div class="microblock vol-logo" id="display_homepage_title"><span class="vol-logo vol-logo--graphic" itemscope="" itemtype="http://schema.org/Store">
-                                            <meta itemprop="name" content="design41.volusion.com"><a class="vol-logo__link" href="http://lpker.jrtgq.servertrust.com/default.asp" title="design41.volusion.com"><img class="logo__img img-responsive" src="../Sample-Resources/header_bg.png" "=""></a></span></div>
+
+                                        <!-- #include virtual="/Repositories/Page-Resources/V1/Header/header.html" -->
+
+<!--                                        <div class="microblock vol-logo" id="display_homepage_title">
+                                            <span class="vol-logo vol-logo--graphic" itemscope="" itemtype="http://schema.org/Store">
+                                            <meta itemprop="name" content="design41.volusion.com">
+                                                <a class="vol-logo__link" href="http://lpker.jrtgq.servertrust.com/default.asp" title="design41.volusion.com">
+                                                    <img class="logo__img img-responsive" src="../Sample-Resources/header_bg_V1.jpg" />
+                                                </a>
+                                            </span>
+                                        </div>-->
+
                                     </div>
                                     <div class="col-xs-3 col-sm-4 col-md-3 microblock-group text-right no-pad-left-xs">
                                         <a class="hidden-xs utility-link" href="https://design41.volusion.com/Contact_Us_a/83.htm">Contact Us</a>

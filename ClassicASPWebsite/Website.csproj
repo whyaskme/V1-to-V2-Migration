@@ -74,6 +74,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="default.asp" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="Repositories\Page-Resources\CSS\V1-V2-Styles.css" />
+    <Content Include="Repositories\Page-Resources\V1\Header\header.html" />
+    <Content Include="Repositories\Page-Resources\V2\Header\header.html" />
+    <Content Include="Repositories\Page-Resources\V2\Header\header_bg_v2.jpg" />
+    <Content Include="Repositories\Page-Resources\Version-Switch\Switch-Panel.html" />
     <Content Include="Sample-Resources\1592329242538.jpg" />
     <Content Include="Sample-Resources\about.jpg" />
     <Content Include="Sample-Resources\content.css" />
@@ -81,6 +86,7 @@
     <Content Include="Sample-Resources\default.css" />
     <Content Include="Sample-Resources\design-toolkit.js" />
     <Content Include="Sample-Resources\header_bg.png" />
+    <Content Include="Repositories\Page-Resources\V1\Header\header_bg_V1.jpg" />
     <Content Include="Sample-Resources\javascripts.js" />
     <Content Include="Sample-Resources\jquery-ui.css" />
     <Content Include="Sample-Resources\jquery-ui.js" />
@@ -248,7 +254,10 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Repositories\Data\SQLServer\" />
+    <Folder Include="Repositories\Data\V2Microservices\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
