@@ -92,7 +92,6 @@ C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\bin
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\bin\roslyn\VBCSCompiler.exe.config
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\obj\Debug\Website.csprojAssemblyReference.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\obj\Debug\Website.csproj.CoreCompileInputs.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\obj\Debug\Website.csproj.CopyComplete
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassicASPWebsite\obj\Debug\Website.dll
