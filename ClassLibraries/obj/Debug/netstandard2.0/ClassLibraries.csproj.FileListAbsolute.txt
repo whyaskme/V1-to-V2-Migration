@@ -1,0 +1,4 @@
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\netstandard2.0\ClassLibraries.csprojAssemblyReference.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\netstandard2.0\ClassLibraries.AssemblyInfoInputs.cache
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\netstandard2.0\ClassLibraries.AssemblyInfo.cs
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\ClassLibraries\obj\Debug\netstandard2.0\ClassLibraries.csproj.CoreCompileInputs.cache
