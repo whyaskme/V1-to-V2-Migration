@@ -74,6 +74,37 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="default.asp" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="Sample-Resources\1592329242538.jpg" />
+    <Content Include="Sample-Resources\about.jpg" />
+    <Content Include="Sample-Resources\content.css" />
+    <Content Include="Sample-Resources\css2.css" />
+    <Content Include="Sample-Resources\default.css" />
+    <Content Include="Sample-Resources\design-toolkit.js" />
+    <Content Include="Sample-Resources\header_bg.png" />
+    <Content Include="Sample-Resources\javascripts.js" />
+    <Content Include="Sample-Resources\jquery-ui.css" />
+    <Content Include="Sample-Resources\jquery-ui.js" />
+    <Content Include="Sample-Resources\jquery.js" />
+    <Content Include="Sample-Resources\jquery_002.js" />
+    <Content Include="Sample-Resources\owl.css" />
+    <Content Include="Sample-Resources\owl.js" />
+    <Content Include="Sample-Resources\paypal-rest-default-buttons.js" />
+    <Content Include="Sample-Resources\promo-01.jpg" />
+    <Content Include="Sample-Resources\promo-02.jpg" />
+    <Content Include="Sample-Resources\promo-03.jpg" />
+    <Content Include="Sample-Resources\promo-04.jpg" />
+    <Content Include="Sample-Resources\snippets.css" />
+    <Content Include="Sample-Resources\soft_add.css" />
+    <Content Include="Sample-Resources\soft_add.js" />
+    <Content Include="Sample-Resources\soft_add_mult.js" />
+    <Content Include="Sample-Resources\style-editor-defaults.css" />
+    <Content Include="Sample-Resources\template.css" />
+    <Content Include="Sample-Resources\template.js" />
+    <Content Include="Sample-Resources\theme-icons-base.css" />
+    <Content Include="Sample-Resources\vnav.css" />
+    <Content Include="Sample-Resources\vnav.js" />
+    <Content Include="Sample-Resources\volusion-owl.css" />
+    <Content Include="Sample-Resources\volusion.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -217,6 +248,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
