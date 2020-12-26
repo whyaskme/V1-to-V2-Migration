@@ -39,6 +39,7 @@ C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\bi
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\bin\Debug\MongoDB.Driver.xml
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\bin\Debug\MongoDB.Driver.Core.xml
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\bin\Debug\System.Buffers.xml
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\obj\Debug\Volusion.Utilities.csprojAssemblyReference.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\obj\Debug\Volusion.Utilities.csproj.CoreCompileInputs.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\obj\Debug\Volusion.Utilities.csproj.CopyComplete
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Utilities\obj\Debug\Volusion.Utilities.dll

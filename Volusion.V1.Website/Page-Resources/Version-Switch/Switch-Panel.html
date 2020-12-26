@@ -1,0 +1,40 @@
+﻿<link href="../Repositories/Page-Resources/CSS/V1-V2-Styles.css" rel="stylesheet" />
+<script type="text/javascript" src="Repositories/Page-Resources/JS/version-switch.js"></script>
+
+<div id="div-version-switch-panel">
+    <h1>Volusion Platform Migration</h1>
+    <div class="div-switch-panel-item">
+        <label>Version:&nbsp;
+            <span class="span-option-item">
+                <input name="opt-version" type="radio" value="v1" onclick="javascript: setVersion(this.value);"/> v1 (Legacy)
+            </span>
+            <span class="span-option-item">
+                <input name="opt-version" type="radio" value="v2" onclick="javascript: setVersion(this.value);"/> v2 (MicroServices)
+            </span>
+        </label>
+    </div>
+    <div class="div-switch-panel-item">
+        <span class="span-item-detail">
+            <label for="span-repository-type">Repo Source:</label>
+            <span id="span-repository-type">Database</span>
+        </span>
+        <span id="span-tenant-info-container" class="span-item-detail">
+            <label for="hidden-tenantId">TenantId:</label>
+            <span id="span-tenantId"></span>
+        </span>
+        <span id="span-migration-info-container" class="span-item-detail">
+            <label>IsMigrated&nbsp;
+                <span class="span-option-item">
+                    <input type="radio" checked name="opt-isMigrated" title="Disabled. Driven by server-side logic." disabled value="false"> false
+                </span>
+                <span class="span-option-item">
+                    <input type="radio" name="opt-isMigrated" title="Disabled. Driven by server-side logic." disabled value="true"> true
+                </span>
+            </label>
+        </span>
+    </div>
+    <div id="div-system-messages" class="div-switch-panel-item">
+        <label for="hidden-tenantId">Message:</label>
+        <div id="div-message-details">Nothing to see here...</div>
+    </div>
+</div>

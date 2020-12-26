@@ -72,10 +72,18 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="default.asp" />
+    <Content Include="default-ORIGINAL.asp" />
     <Content Include="Repositories\Page-Resources\CSS\V1-V2-Styles.css" />
     <Content Include="Repositories\Page-Resources\JS\version-switch.js" />
+    <Content Include="Repositories\Page-Resources\V1\Categories\Agriculture.html" />
+    <Content Include="Repositories\Page-Resources\V1\Categories\Meat.html" />
+    <Content Include="Repositories\Page-Resources\V1\Categories\Produce.html" />
+    <Content Include="Repositories\Page-Resources\V1\Categories\Recipes.html" />
     <Content Include="Repositories\Page-Resources\V1\Header\header.html" />
+    <Content Include="Repositories\Page-Resources\V2\Categories\Agriculture.html" />
+    <Content Include="Repositories\Page-Resources\V2\Categories\Meat.html" />
+    <Content Include="Repositories\Page-Resources\V2\Categories\Produce.html" />
+    <Content Include="Repositories\Page-Resources\V2\Categories\Recipes.html" />
     <Content Include="Repositories\Page-Resources\V2\Header\header.html" />
     <Content Include="Repositories\Page-Resources\V2\Header\header_bg_v2.jpg" />
     <Content Include="Repositories\Page-Resources\Version-Switch\Switch-Panel.html" />
@@ -254,10 +262,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\Data\SQLServer\" />
-    <Folder Include="Repositories\Data\V2Microservices\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

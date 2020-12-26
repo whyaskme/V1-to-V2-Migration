@@ -1,0 +1,54 @@
+﻿h1 {
+    font-size: 18px !important;
+    padding-left: 10px;
+}
+
+#div-version-switch-panel
+{
+    background-color: #c0c0c0;
+    padding: 10px;
+}
+
+#div-system-messages
+{
+    display: none;
+}
+
+#span-tenant-info-container, #span-migration-info-container {
+    display: none;
+}
+
+.div-switch-panel-item {
+    border-top: dashed 1px #808080;
+    padding: 10px;
+}
+
+input {
+    background-color: #c0c0c0;
+    padding-left: 10px;
+    border: solid 1px #808080;
+    border-radius: 5px !important;
+}
+
+#span-repository-type
+{
+    color: #ff0000;
+}
+
+.span-option-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: solid 0px #ff0000 !important;
+}
+
+.span-item-detail {
+    border-right: dashed 1px #808080;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+#div-message-details {
+    border-top: solid 0px #808080;
+    padding: 15px;
+    font-style: italic;
+}

@@ -396,8 +396,6 @@
                 </nav><!-- /slide menu left -->
             <div class="page-wrap">
 
-                <!-- #include virtual="/Repositories/Page-Resources/Version-Switch/Switch-Panel.html" -->
-
                 <header class="header">
                     <div class="header__top">
                         <div class="container">
@@ -685,41 +683,33 @@ var firstImg = jq211('#vSlider .item:first-child img'); firstImg.attr('src', fir
     <section class="vcb-snippet vcb-custom clearfix text-center vcb-artisan-grid">
         <div class="row">
 
-            <!-- #include virtual="/Repositories/Page-Resources/V2/Categories/Meat.html" -->
-
-            <!-- #include virtual="/Repositories/Page-Resources/V2/Categories/Produce.html" -->
-
-            <!-- #include virtual="/Repositories/Page-Resources/V2/Categories/Recipes.html" -->
-
-            <!-- #include virtual="/Repositories/Page-Resources/V2/Categories/Agriculture.html" -->
-
-<!--            <div class="col-xs-12 col-md-6 grid-item">
+            <div class="col-xs-12 col-md-6 grid-item">
                 <a href="#">
                     <img src="../Sample-Resources/promo-01.jpg" alt="MEAT">
                     <h3>MEAT</h3>
                 </a>
-            </div>-->
+            </div>
 
-<!--            <div class="col-xs-12 col-md-6 grid-item">
+            <div class="col-xs-12 col-md-6 grid-item">
                 <a href="#">
                     <img src="../Sample-Resources/promo-02.jpg" alt="PRODUCE">
                     <h3>PRODUCE</h3>
                 </a>
-            </div>-->
+            </div>
 
-<!--            <div class="col-xs-12 col-md-6 grid-item">
+            <div class="col-xs-12 col-md-6 grid-item">
                 <a href="#">
                     <img src="../Sample-Resources/promo-03.jpg" alt="RECIPES">
                     <h3>RECIPES</h3>
                 </a>
-            </div>-->
+            </div>
 
-<!--            <div class="col-xs-12 col-md-6 grid-item">
+            <div class="col-xs-12 col-md-6 grid-item">
                 <a href="#">
                     <img src="../Sample-Resources/promo-04.jpg" alt="COMMUNITY SUPPORTED AGRICULTURE">
                     <h3>COMMUNITY SUPPORTED AGRICULTURE</h3>
                 </a>
-            </div>-->
+            </div>
 
         </div>
     </section>
