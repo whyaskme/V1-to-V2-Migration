@@ -9,17 +9,19 @@ const sourceServices = "Svc -> http://localhost/api/";
 
 var msg = "";
 
-
 $(document).ready(function () {
     $("#span-tenantId").html('');
     $("#span-envLegacyLabel").html(envLegacyLabel);
     $("#span-envUpgradeLabel").html(envUpgradeLabel);
     $("#span-repository-type").html(sourceDB);
+
+    // Reset radio button for page refresh
+    $("input[name=opt-version][value=v1]").attr('checked', 'checked');
 });
 
 function expandMigrationPanel()
 {
-    $("#div-version-switch-panel").show();
+    $("#div-version-switch-panel").toggle();
 }
 
 function setVersion(value) {
@@ -43,7 +45,7 @@ function migrateVersionToV2() {
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div >';
     msg += '<div id=\'div-button-container\'>';
-    msg += '<input type =\'button\' value=\'Upgrade\' class=\'button\' />';
+    msg += '<input type =\'button\' value=\'Upgrade\' class=\'button\' onclick=\'javascript: continueMigration(1);\' />';
     msg += '</div>';
 
     $("#div-system-messages").html(msg);
@@ -62,7 +64,7 @@ function migrateVersionFromV2() {
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div >';
     msg += '<div id=\'div-button-container\'>';
-    msg += '<input type =\'button\' value=\'Downgrade\' class=\'button\' />';
+    msg += '<input type =\'button\' value=\'Downgrade\' class=\'button\' onclick=\'javascript: continueMigration(0);\' />';
     msg += '</div>';
 
     $("#div-system-messages").html(msg);
@@ -73,5 +75,13 @@ function migrateVersionFromV2() {
 }
 
 function continueMigration(migrationType) {
-    alert("Direction: " + migrationType);
+
+    if (migrationType === 1) {
+        alert("Upgrading system now. Closing migration dialog.");
+    }
+    else {
+        alert("Downgrading system now. Closing migration dialog.");
+    }
+
+    $("#div-version-switch-panel").toggle();
 }
