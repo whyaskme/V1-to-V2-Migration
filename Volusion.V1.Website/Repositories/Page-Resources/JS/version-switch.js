@@ -26,7 +26,8 @@ function setVersion(value) {
 function migrateVersionToV2() {
     $("#span-tenantId").html(objIdTenant);
 
-    msg += 'Upgrade message...';
+    msg += '<div>Upgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
+    msg += '<div><input type=\'button\' value=\'Upgrade\' onclick=\'javascript: continueMigration(upgrade);\' class=\'button\' /></div>';
 
     $("#span-repository-type").html(sourceServices);
     $("#div-message-details").html(msg);
@@ -37,10 +38,15 @@ function migrateVersionToV2() {
 function migrateVersionFromV2() {
     $("#span-tenantId").html('');
 
-    msg += 'Downgrade message...';
+    msg += '<div>Downgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
+    msg += '<div><input type=\'button\' value=\'Downgrade\' onclick=\'javascript: continueMigration(downgrade);\' class=\'button\' /></div>';
 
     $("#span-repository-type").html(sourceDB);
     $("#div-message-details").html(msg);
 
     $("#span-migration-info-container").show();
+}
+
+function continueMigration(migrationType) {
+    alert("Direction: " + migrationType);
 }

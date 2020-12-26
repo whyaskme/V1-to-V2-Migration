@@ -52,3 +52,11 @@ input {
     padding: 15px;
     font-style: italic;
 }
+
+.div-button-container {
+    border: solid 1px #ff0000;
+}
+
+.button {
+    border: solid 1px #ff0000;
+}
