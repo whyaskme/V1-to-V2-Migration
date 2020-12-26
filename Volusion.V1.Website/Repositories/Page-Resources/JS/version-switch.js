@@ -141,8 +141,9 @@ function continueMigration(migrationType) {
 function cancelMigration(direction) {
     alert("cancelMigration > " + direction);
     $('input[name=opt-version]').attr("disabled", false);
+    resetMigration();
 }
 
 function resetMigration() {
-
+    alert("resetMigration UI");
 }
