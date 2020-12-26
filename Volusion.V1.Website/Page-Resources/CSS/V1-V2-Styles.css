@@ -5,8 +5,10 @@
 
 #span-header-label {
     position: relative;
-    top: 3px !important;
+    top: 4px !important;
     color: #221b43;
+    font-weight: bold !important;
+    font-size: 17px;
 }
 
 #volusion-logo

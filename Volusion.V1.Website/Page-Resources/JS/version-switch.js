@@ -21,7 +21,7 @@ msgDowngrade += '';
 msgDowngrade += '';
 
 $(document).ready(function () {
-    $("#span-tenantId").html('');
+    $("#span-tenantId").html(objIdEmpty);
     $("#span-envLegacyLabel").html(envLegacyLabel);
     $("#span-envUpgradeLabel").html(envUpgradeLabel);
     $("#span-repository-type").html(sourceDB);
@@ -142,4 +142,8 @@ function continueMigration(migrationType) {
 function cancelMigration(direction) {
     alert("cancelMigration > " + direction);
     $('input[name=opt-version]').attr("disabled", false);
+}
+
+function resetMigration() {
+
 }

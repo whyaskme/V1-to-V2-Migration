@@ -119,6 +119,8 @@
     <Compile Include="MongoDB\Properties\AssemblyInfo.cs" />
     <Compile Include="MongoDB\Repo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLServer\Repo.cs" />
+    <Compile Include="WebServices\Repo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MongoDB\App.config" />
@@ -177,8 +179,6 @@
   <ItemGroup>
     <Folder Include="MongoDB\bin\Release\" />
     <Folder Include="MongoDB\obj\Debug\TempPE\" />
-    <Folder Include="SQLServer\" />
-    <Folder Include="WebServices\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Volusion.Data.Models\Volusion.Data.Models.csproj">
