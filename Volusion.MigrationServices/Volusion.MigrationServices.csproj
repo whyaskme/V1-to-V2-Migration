@@ -247,7 +247,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Repositories\Volusion.Data.Repositories.csproj">
+    <ProjectReference Include="..\Volusion.Data.Repositories\Volusion.Data.Repositories.csproj">
       <Project>{13322803-4f0d-4d9b-a889-0dec7b285b99}</Project>
       <Name>Volusion.Data.Repositories</Name>
     </ProjectReference>
