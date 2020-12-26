@@ -432,16 +432,14 @@
                                     </div>
                                     <div class="col-xs-6 text-center">
 
-                                        <!-- #include virtual="/Repositories/Page-Resources/V1/Header/header.html" -->
-
-<!--                                        <div class="microblock vol-logo" id="display_homepage_title">
-                                            <span class="vol-logo vol-logo--graphic" itemscope="" itemtype="http://schema.org/Store">
+                                        <div class="microblock vol-logo" id="display_homepage_title">
+<!--                                            <span class="vol-logo vol-logo--graphic" itemscope="" itemtype="http://schema.org/Store">
                                             <meta itemprop="name" content="design41.volusion.com">
-                                                <a class="vol-logo__link" href="http://lpker.jrtgq.servertrust.com/default.asp" title="design41.volusion.com">
-                                                    <img class="logo__img img-responsive" src="../Sample-Resources/header_bg_V1.jpg" />
-                                                </a>
-                                            </span>
-                                        </div>-->
+                                                <a class="vol-logo__link" href="http://lpker.jrtgq.servertrust.com/default.asp" title="design41.volusion.com">-->
+                                                    <img class="logo__img img-responsive" src="../Sample-Resources/header_bg.png" />
+<!--                                                </a>
+                                            </span>-->
+                                        </div>
 
                                     </div>
                                     <div class="col-xs-3 col-sm-4 col-md-3 microblock-group text-right no-pad-left-xs">

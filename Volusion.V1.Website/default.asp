@@ -97,7 +97,7 @@
     CODE DATE: 2017-05
     VERSION: 4.0.15
 ========================================= -->
-<body>
+<body onload="">
     <span style="display:none;" id="svgIncludes"><svg xmlns="http://www.w3.org/2000/svg">
   <symbol viewBox="0 0 42 42" id="svg-Email">
     <title>Email</title>
@@ -683,6 +683,7 @@ var firstImg = jq211('#vSlider .item:first-child img'); firstImg.attr('src', fir
 <div id="div_articleid_2">
 <div data-thumb="/v/vspfiles/templates/Artisan/snippets/images/thumbnails/thumbnail-grid.jpg">
     <section class="vcb-snippet vcb-custom clearfix text-center vcb-artisan-grid">
+
         <div class="row">
 
             <!-- #include virtual="/Repositories/Page-Resources/V2/Categories/Meat.html" -->
@@ -693,35 +694,8 @@ var firstImg = jq211('#vSlider .item:first-child img'); firstImg.attr('src', fir
 
             <!-- #include virtual="/Repositories/Page-Resources/V2/Categories/Agriculture.html" -->
 
-<!--            <div class="col-xs-12 col-md-6 grid-item">
-                <a href="#">
-                    <img src="../Sample-Resources/promo-01.jpg" alt="MEAT">
-                    <h3>MEAT</h3>
-                </a>
-            </div>-->
-
-<!--            <div class="col-xs-12 col-md-6 grid-item">
-                <a href="#">
-                    <img src="../Sample-Resources/promo-02.jpg" alt="PRODUCE">
-                    <h3>PRODUCE</h3>
-                </a>
-            </div>-->
-
-<!--            <div class="col-xs-12 col-md-6 grid-item">
-                <a href="#">
-                    <img src="../Sample-Resources/promo-03.jpg" alt="RECIPES">
-                    <h3>RECIPES</h3>
-                </a>
-            </div>-->
-
-<!--            <div class="col-xs-12 col-md-6 grid-item">
-                <a href="#">
-                    <img src="../Sample-Resources/promo-04.jpg" alt="COMMUNITY SUPPORTED AGRICULTURE">
-                    <h3>COMMUNITY SUPPORTED AGRICULTURE</h3>
-                </a>
-            </div>-->
-
         </div>
+
     </section>
 </div>
 <div data-thumb="/v/vspfiles/templates/Artisan/snippets/images/thumbnails/thumbnail-about.jpg">
@@ -799,62 +773,7 @@ var firstImg = jq211('#vSlider .item:first-child img'); firstImg.attr('src', fir
                                                         <p class="sr-only">Follow design41.volusion.com on Twitter</p>
                                                         <i class="vol-theme-icon  vol-theme-icon--twitter"></i>
                                                     </a>
-                                                </li><!--
-                                                <li class="social__item">
-                                                    <a class="social__link instagram" href="//instagram.com/" target="_blank" title="Follow design41.volusion.com on Instagram">
-                                                        <p class="sr-only">Follow design41.volusion.com on Instagram</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--instagram"></i>
-                                                    </a>
                                                 </li>
-                                                <li class="social__item">
-                                                    <a class="social__link pinterest" href="//www.pinterest.com/" target="_blank" title="Pin design41.volusion.com to Pinterest">
-                                                        <p class="sr-only">Pin design41.volusion.com to Pinterest</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--pinterest"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="social__item">
-                                                    <a class="social__link rss" href="//www.blogspot.com/" target="_blank" title="Subscribe to design41.volusion.com's Blog">
-                                                        <p class="sr-only">Subscribe to design41.volusion.com's Blog</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--rss"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="social__item">
-                                                    <a class="social__link wordpress" href="//www.wordpress.com/" target="_blank" title="Subscribe to design41.volusion.com's Blog">
-                                                        <p class="sr-only">Like design41.volusion.com on Wordpress</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--wordpress"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="social__item">
-                                                    <a class="social__link youtube" href="//www.youtube.com/" target="_blank" title="Subscribe to design41.volusion.com's YouTube Channel">
-                                                        <p class="sr-only">Subscribe to design41.volusion.com's YouTube Channel</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--youtube"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="social__item">
-                                                    <a class="social__link gplus" href="//plus.google.com/" target="_blank" title="Add design41.volusion.com to Your Google+ Circle">
-                                                        <p class="sr-only">Add design41.volusion.com to Your Google+ Circle</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--googleplus"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="social__item">
-                                                    <a class="social__link linked-in" href="//www.linkedin.com/" target="_blank" title="Connect with design41.volusion.com on LinkedIn">
-                                                        <p class="sr-only">Connect with design41.volusion.com on LinkedIn</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--linkedin"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="social__item">
-                                                    <a class="social__link houzz" href="//www.houzz.com/" target="_blank" title="Follow design41.volusion.com on Houzz">
-                                                        <p class="sr-only">Like design41.volusion.com on Houzz</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--houzz"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="social__item">
-                                                    <a class="social__link yelp" href="//www.yelp.com/" target="_blank" title="View design41.volusion.com on Yelp">
-                                                        <p class="sr-only">Like design41.volusion.com on Yelp</p>
-                                                        <i class="vol-theme-icon  vol-theme-icon--yelp"></i>
-                                                    </a>
-                                                </li>
-                                                -->
                                             </ul>
                                         </div>
                                     </section>
