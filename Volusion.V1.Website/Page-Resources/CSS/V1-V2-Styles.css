@@ -9,18 +9,14 @@
     padding: 10px;
 }
 
-#div-system-messages
-{
-    display: none;
-}
-
 #span-tenant-info-container, #span-migration-info-container {
     display: none;
 }
 
 .div-switch-panel-item {
-    border-top: dashed 1px #808080;
+    border-top: dashed 1px #ff0000;
     padding: 10px;
+    height: 50px;
 }
 
 input {
@@ -47,14 +43,15 @@ input {
     padding-right: 15px;
 }
 
-#div-message-details {
-    border-top: solid 0px #808080;
+#div-system-messages {
+    border: solid 1px #ff0000;
     padding: 15px;
     font-style: italic;
+/*    display: none;*/
 }
 
-.div-button-container {
-    border: solid 1px #ff0000;
+#div-button-container {
+    border: solid 1px #ff0000 !important;
 }
 
 .button {

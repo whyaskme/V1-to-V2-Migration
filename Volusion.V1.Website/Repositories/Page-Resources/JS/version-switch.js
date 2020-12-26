@@ -1,52 +1,65 @@
-﻿const objIdEmpty = 'ObjectId("000000000000000000000000")';
-const objIdTenant = 'ObjectId("57b2229fd00bc11c2c18ec3d")';
+﻿//const objIdEmpty = 'ObjectId("000000000000000000000000")';
+//const objIdTenant = 'ObjectId("57b2229fd00bc11c2c18ec3d")';
 
-const sourceDB = "Database ( 'localhost\\Volusion-V1' )";
-const sourceServices = "Services ( 'https://127.0.0.1/Volusion-V2' )";
+//const sourceDB = "Database ( localhostVolusion-V1 )";
+//const sourceServices = "Services ( Microservices )";
 
-let msg = '';
+//let msg = "";
 
-$(document).ready(function () {
-    $("#span-tenantId").html('');
-    $("#span-repository-type").html(sourceDB);
-});
+alert('here');
 
-function setVersion(value) {
-    msg = '';
-    $("#div-system-messages").show();
+//$(document).ready(function () {
+//    //$("#span-tenantId").html('');
+//    //$("#span-repository-type").html(sourceDB);
 
-    if (value === 'v1') {
-        migrateVersionFromV2();
-    }
-    else {
-        migrateVersionToV2();
-    }
-}
+//    alert('here');
+//});
 
-function migrateVersionToV2() {
-    $("#span-tenantId").html(objIdTenant);
+//function setVersion(value) {
 
-    msg += '<div>Upgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
-    msg += '<div><input type=\'button\' value=\'Upgrade\' onclick=\'javascript: continueMigration(upgrade);\' class=\'button\' /></div>';
+//    alert(value);
 
-    $("#span-repository-type").html(sourceServices);
-    $("#div-message-details").html(msg);
+//    msg = "huh";
+//    $("#div-system-messages").show();
 
-    $("#span-migration-info-container").show();
-}
+//    if (value === 'v1') {
+//        migrateVersionFromV2();
+//    }
+//    else {
+//        migrateVersionToV2();
+//    }
+//}
 
-function migrateVersionFromV2() {
-    $("#span-tenantId").html('');
+//function migrateVersionToV2() {
+//    $("#span-tenantId").html(objIdTenant);
 
-    msg += '<div>Downgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
-    msg += '<div><input type=\'button\' value=\'Downgrade\' onclick=\'javascript: continueMigration(downgrade);\' class=\'button\' /></div>';
+//    //msg += '<div>Upgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
+//    //msg += '<div id=\'div-button-container\'><input type=\'button\' value=\'Upgrade\' class=\'button\' /></div>';
 
-    $("#span-repository-type").html(sourceDB);
-    $("#div-message-details").html(msg);
+//    alert(msg);
 
-    $("#span-migration-info-container").show();
-}
+//    $("#div-system-messages").html(msg);
 
-function continueMigration(migrationType) {
-    alert("Direction: " + migrationType);
-}
+//    $("#span-repository-type").html(sourceServices);
+
+//    $("#span-migration-info-container").show();
+//}
+
+//function migrateVersionFromV2() {
+//    $("#span-tenantId").html('');
+
+//    //msg += '<div>Downgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
+//    //msg += '<div id=\'div-button-container\'><input type=\'button\' value=\'Downgrade\' class=\'button\' /></div>';
+
+//    alert(msg);
+
+//    $("#div-system-messages").html(msg);
+
+//    $("#span-repository-type").html(sourceDB);
+
+//    $("#span-migration-info-container").show();
+//}
+
+//function continueMigration(migrationType) {
+//    alert("Direction: " + migrationType);
+//}

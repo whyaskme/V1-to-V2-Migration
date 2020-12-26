@@ -15,6 +15,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Volusion.V2.NodeJs.Services
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volusion.MigrationServices", "Volusion.MigrationServices\Volusion.MigrationServices.csproj", "{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volusion.V2.Tenent.Websites", "Volusion.V2.Tenent.Websites\Volusion.V2.Tenent.Websites.csproj", "{44C84E8D-24A0-4551-8D8D-93025635F7C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1EB15DA-6367-4DC6-AD5A-CE5E45B1D135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C84E8D-24A0-4551-8D8D-93025635F7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C84E8D-24A0-4551-8D8D-93025635F7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C84E8D-24A0-4551-8D8D-93025635F7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C84E8D-24A0-4551-8D8D-93025635F7C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
