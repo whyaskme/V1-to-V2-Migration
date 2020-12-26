@@ -41,7 +41,7 @@ function migrateVersionToV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Upgrade:</b> We need to migrate your data and images forward to the ' + envUpgradeLabel + ' environment.';
+    msg += '<b>Upgrade:</b> We need to migrate your data and images <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div >';
     msg += '<div id=\'div-button-container\'>';
@@ -60,7 +60,7 @@ function migrateVersionFromV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Downgrade:</b> We need to migrate your data and images back to the ' + envLegacyLabel + ' environment.';
+    msg += '<b>Downgrade:</b> We need to migrate your data and images <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div >';
     msg += '<div id=\'div-button-container\'>';
