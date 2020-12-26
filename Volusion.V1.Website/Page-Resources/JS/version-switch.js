@@ -33,6 +33,7 @@ $(document).ready(function () {
 function expandMigrationPanel()
 {
     $("#div-version-switch-panel").toggle();
+    $('input[name=opt-version]').attr("disabled", false);
 }
 
 function setVersion(value) {
@@ -93,6 +94,8 @@ function continueMigration(migrationType) {
 
     msg = '';
 
+    $('input[name=opt-version]').attr("disabled", true);
+
     if (migrationType === 1) {
 
         $("#span-tenantId").html(objIdTenant);
@@ -104,13 +107,13 @@ function continueMigration(migrationType) {
         migrationCompleted = true;
 
         msg += '<div>';
-        msg += 'Upgrading <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> from ' + envLegacyLabel + ' environment.';
+        msg += 'Upgrading to ' + envUpgradeLabel + ' from the ' + envLegacyLabel + ' environment.';
         msg += '</div>';
         msg += '<div id=\'div-progress-bar-container\'>';
         msg += '<div id=\'div-progress-bar-detail\'>Upgrade in progress...</div>';
         msg += '</div>';
         msg += '<div id=\'div-button-container\'>';
-        msg += '<input type =\'button\' value=\'Cancel Upgrade\' class=\'button\' onclick=\'javascript: cancelMigration(0);\' />';
+        msg += '<input type =\'button\' value=\'Cancel Upgrade\' class=\'button\' onclick=\'javascript: cancelMigration(1);\' />';
         msg += '</div>';
     }
     else {
@@ -120,7 +123,7 @@ function continueMigration(migrationType) {
         alert("Downgrading system now.");
 
         msg += '<div>';
-        msg += 'Downgrading <i><b>Back</b> to the ' + envLegacyLabel + '</i> from ' + envUpgradeLabel + ' environment.';
+        msg += 'Downgrading from ' + envUpgradeLabel + '</i> to the ' + envLegacyLabel + ' environment.';
         msg += '</div>';
         msg += '<div id=\'div-progress-bar-container\'>';
         msg += '<div id=\'div-progress-bar-detail\'>Downgrade in progress...</div>';
@@ -134,4 +137,9 @@ function continueMigration(migrationType) {
     $("#div-system-messages").html(msg);
 
     //$("#div-version-switch-panel").toggle();
+}
+
+function cancelMigration(direction) {
+    alert("cancelMigration > " + direction);
+    $('input[name=opt-version]').attr("disabled", false);
 }
