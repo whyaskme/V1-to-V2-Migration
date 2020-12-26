@@ -1,65 +1,77 @@
-﻿//const objIdEmpty = 'ObjectId("000000000000000000000000")';
-//const objIdTenant = 'ObjectId("57b2229fd00bc11c2c18ec3d")';
+﻿const objIdEmpty = 'ObjectId("000000000000000000000000")';
+const objIdTenant = 'ObjectId("57b2229fd00bc11c2c18ec3d")';
 
-//const sourceDB = "Database ( localhostVolusion-V1 )";
-//const sourceServices = "Services ( Microservices )";
+const envLegacyLabel = '<b>v1 (Legacy)</b>';
+const envUpgradeLabel = '<b>v2 (MicroServices)</b>';
 
-//let msg = "";
+const sourceDB = "Db -> localhost\Volusion-V1";
+const sourceServices = "Svc -> http://localhost/api/";
 
-alert('here');
+var msg = "";
 
-//$(document).ready(function () {
-//    //$("#span-tenantId").html('');
-//    //$("#span-repository-type").html(sourceDB);
 
-//    alert('here');
-//});
+$(document).ready(function () {
+    $("#span-tenantId").html('');
+    $("#span-envLegacyLabel").html(envLegacyLabel);
+    $("#span-envUpgradeLabel").html(envUpgradeLabel);
+    $("#span-repository-type").html(sourceDB);
+});
 
-//function setVersion(value) {
+function expandMigrationPanel()
+{
+    $("#div-version-switch-panel").show();
+}
 
-//    alert(value);
+function setVersion(value) {
 
-//    msg = "huh";
-//    $("#div-system-messages").show();
+    $("#div-system-messages").show();
 
-//    if (value === 'v1') {
-//        migrateVersionFromV2();
-//    }
-//    else {
-//        migrateVersionToV2();
-//    }
-//}
+    if (value === 'v1') {
+        migrateVersionFromV2();
+    }
+    else {
+        migrateVersionToV2();
+    }
+}
 
-//function migrateVersionToV2() {
-//    $("#span-tenantId").html(objIdTenant);
+function migrateVersionToV2() {
+    $("#span-tenantId").html(objIdTenant);
 
-//    //msg += '<div>Upgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
-//    //msg += '<div id=\'div-button-container\'><input type=\'button\' value=\'Upgrade\' class=\'button\' /></div>';
+    msg = "";
+    msg += '<div>';
+    msg += '<b>Upgrade:</b> We need to migrate your data and images forward to the ' + envUpgradeLabel + ' environment.';
+    msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
+    msg += '</div >';
+    msg += '<div id=\'div-button-container\'>';
+    msg += '<input type =\'button\' value=\'Upgrade\' class=\'button\' />';
+    msg += '</div>';
 
-//    alert(msg);
+    $("#div-system-messages").html(msg);
 
-//    $("#div-system-messages").html(msg);
+    $("#span-repository-type").html(sourceServices);
 
-//    $("#span-repository-type").html(sourceServices);
+    $("#span-migration-info-container").show();
+}
 
-//    $("#span-migration-info-container").show();
-//}
+function migrateVersionFromV2() {
+    $("#span-tenantId").html('');
 
-//function migrateVersionFromV2() {
-//    $("#span-tenantId").html('');
+    msg = "";
+    msg += '<div>';
+    msg += '<b>Downgrade:</b> We need to migrate your data and images back to the ' + envLegacyLabel + ' environment.';
+    msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
+    msg += '</div >';
+    msg += '<div id=\'div-button-container\'>';
+    msg += '<input type =\'button\' value=\'Downgrade\' class=\'button\' />';
+    msg += '</div>';
 
-//    //msg += '<div>Downgrading versions can take some time to complete. We will send you an email once finished. In the meantime, your site will continue to run as it is.</div>';
-//    //msg += '<div id=\'div-button-container\'><input type=\'button\' value=\'Downgrade\' class=\'button\' /></div>';
+    $("#div-system-messages").html(msg);
 
-//    alert(msg);
+    $("#span-repository-type").html(sourceDB);
 
-//    $("#div-system-messages").html(msg);
+    $("#span-migration-info-container").show();
+}
 
-//    $("#span-repository-type").html(sourceDB);
-
-//    $("#span-migration-info-container").show();
-//}
-
-//function continueMigration(migrationType) {
-//    alert("Direction: " + migrationType);
-//}
+function continueMigration(migrationType) {
+    alert("Direction: " + migrationType);
+}

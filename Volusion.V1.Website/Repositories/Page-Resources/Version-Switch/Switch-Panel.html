@@ -1,15 +1,21 @@
 ﻿<link href="../Page-Resources/CSS/V1-V2-Styles.css" rel="stylesheet" />
 <script type="text/javascript" src="../Page-Resources/JS/version-switch.js"></script>
 
+<a href="javascript: expandMigrationPanel();" title="Click to expand migration panel">
+    <div id="div-version-switch-panel-ribbon">
+        <img id="volusion-logo" src="../../../Images/color-logo.svg" />
+    </div>
+</a>
+
 <div id="div-version-switch-panel">
-    <h1>Volusion Platform Migration</h1>
+    <h1>Platform Migration</h1>
     <div class="div-switch-panel-item">
         <label>Version:&nbsp;
             <span class="span-option-item">
-                <input name="opt-version" type="radio" value="v1" onclick="javascript: setVersion(this.value);"/> v1 (Legacy)
+                <input name="opt-version" type="radio" value="v1" onclick="javascript: setVersion(this.value);"/> <span id="span-envLegacyLabel"></span>
             </span>
             <span class="span-option-item">
-                <input name="opt-version" type="radio" value="v2" onclick="javascript: setVersion(this.value);"/> v2 (MicroServices)
+                <input name="opt-version" type="radio" value="v2" onclick="javascript: setVersion(this.value);"/> <span id="span-envUpgradeLabel"></span>
             </span>
         </label>
     </div>

@@ -74,6 +74,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="default-ORIGINAL.asp" />
     <Content Include="default.asp" />
+    <Content Include="Images\color-logo.svg" />
     <Content Include="Page-Resources\CSS\V1-V2-Styles.css" />
     <Content Include="Page-Resources\JS\version-switch.js" />
     <Content Include="Page-Resources\V1\Header\header.html" />

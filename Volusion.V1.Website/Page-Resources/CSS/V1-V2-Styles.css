@@ -3,10 +3,27 @@
     padding-left: 10px;
 }
 
+#volusion-logo
+{
+    height: 25px;
+    width: auto;
+}
+
+#div-version-switch-panel-ribbon
+{
+    text-align: center;
+    border: solid 1px #808080;
+}
+
+#div-version-switch-panel-ribbon, #div-version-switch-panel {
+    background-color: #ccc;
+    padding: 10px;
+    height: auto !important;
+}
+
 #div-version-switch-panel
 {
-    background-color: #c0c0c0;
-    padding: 10px;
+    display: none;
 }
 
 #span-tenant-info-container, #span-migration-info-container {
@@ -14,7 +31,7 @@
 }
 
 .div-switch-panel-item {
-    border-top: dashed 1px #ff0000;
+    border-top: dashed 0px #ff0000;
     padding: 10px;
     height: 50px;
 }
@@ -44,16 +61,30 @@ input {
 }
 
 #div-system-messages {
-    border: solid 1px #ff0000;
+    border-top: solid 1px #808080;
     padding: 15px;
-    font-style: italic;
-/*    display: none;*/
+    padding-bottom: 50px !important;
+/*    font-style: italic;*/
+    display: none;
+    margin-bottom: 50px;
 }
 
 #div-button-container {
-    border: solid 1px #ff0000 !important;
+    border: solid 0px #ff0000 !important;
+    text-align: center;
 }
 
 .button {
-    border: solid 1px #ff0000;
+    position: relative;
+    top: 15px;
+    padding-left: 15px !important;
+    padding-bottom: 30px !important;
+    background-color: #004652 !important;
+    color: #ffffff !important;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #0594ac !important;
 }

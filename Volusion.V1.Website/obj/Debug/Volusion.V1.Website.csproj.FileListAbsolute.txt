@@ -76,3 +76,4 @@ C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.V1.Website\o
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.V1.Website\obj\Debug\Volusion.V1.Website.csproj.CopyComplete
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.V1.Website\obj\Debug\Volusion.V1.Website.dll
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.V1.Website\obj\Debug\Volusion.V1.Website.pdb
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.V1.Website\obj\Debug\Volusion.V1.Website.csprojAssemblyReference.cache
