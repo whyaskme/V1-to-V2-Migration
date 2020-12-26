@@ -64,7 +64,6 @@ input {
     border-top: solid 1px #808080;
     padding: 15px;
     padding-bottom: 50px !important;
-/*    font-style: italic;*/
     display: none;
     margin-bottom: 50px;
 }
@@ -72,6 +71,7 @@ input {
 #div-button-container {
     border: solid 0px #ff0000 !important;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .button {
@@ -87,4 +87,20 @@ input {
 
 .button:hover {
     background-color: #0594ac !important;
+}
+
+#div-progress-bar-container {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #004652 !important;
+    height: 15px !important;
+    font-size: 10px;
+}
+
+#div-progress-bar-detail {
+    background-color: #0594ac !important;
+    color: #ffffff;
+    width: 25%;
 }

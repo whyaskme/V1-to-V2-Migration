@@ -8,9 +8,20 @@ const sourceDB = "Db -> localhost\Volusion-V1";
 const sourceServices = "Svc -> http://localhost/api/";
 
 var msg = "";
+var migrationCompleted = false;
+
+var msgUpgrade = '';
+msgUpgrade += '';
+msgUpgrade += '';
+msgUpgrade += '';
+
+var msgDowngrade = '';
+msgDowngrade += '';
+msgDowngrade += '';
+msgDowngrade += '';
 
 $(document).ready(function () {
-    $("#span-tenantId").html(objIdEmpty);
+    $("#span-tenantId").html('');
     $("#span-envLegacyLabel").html(envLegacyLabel);
     $("#span-envUpgradeLabel").html(envUpgradeLabel);
     $("#span-repository-type").html(sourceDB);
@@ -37,13 +48,13 @@ function setVersion(value) {
 }
 
 function migrateVersionToV2() {
-    $("#span-tenantId").html(objIdTenant);
+    //$("#span-tenantId").html(objIdTenant);
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Upgrade:</b> We need to migrate your data and images <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
+    msg += '<b>Upgrade:</b> We need to migrate your data (products, images, customers, orders, payment porcessors...etc) <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
-    msg += '</div >';
+    msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
     msg += '<input type =\'button\' value=\'Upgrade\' class=\'button\' onclick=\'javascript: continueMigration(1);\' />';
     msg += '</div>';
@@ -53,16 +64,17 @@ function migrateVersionToV2() {
     $("#span-repository-type").html(sourceServices);
 
     $("#span-migration-info-container").show();
+    $("#span-tenant-info-container").show();
 }
 
 function migrateVersionFromV2() {
-    $("#span-tenantId").html('');
+    //$("#span-tenantId").html(objIdEmpty);
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Downgrade:</b> We need to migrate your data and images <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
+    msg += '<b>Downgrade:</b> We need to migrate your data (products, images, customers, orders, payment porcessors...etc) <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
-    msg += '</div >';
+    msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
     msg += '<input type =\'button\' value=\'Downgrade\' class=\'button\' onclick=\'javascript: continueMigration(0);\' />';
     msg += '</div>';
@@ -72,17 +84,54 @@ function migrateVersionFromV2() {
     $("#span-repository-type").html(sourceDB);
 
     $("#span-migration-info-container").show();
+    $("#span-tenant-info-container").show();
 }
 
 function continueMigration(migrationType) {
 
+    let msgTenantInfo = '';
+
+    msg = '';
+
     if (migrationType === 1) {
-        alert("Upgrading system now. Closing migration dialog.");
+
+        $("#span-tenantId").html(objIdTenant);
+        msgTenantInfo = 'Called Api and got back TenantId: ' + objIdTenant + '.';
+        msgTenantInfo += ' Upgrading system now.';
+
+        alert(msgTenantInfo);
+
+        migrationCompleted = true;
+
+        msg += '<div>';
+        msg += 'Upgrading <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> from ' + envLegacyLabel + ' environment.';
+        msg += '</div>';
+        msg += '<div id=\'div-progress-bar-container\'>';
+        msg += '<div id=\'div-progress-bar-detail\'>Upgrade in progress...</div>';
+        msg += '</div>';
+        msg += '<div id=\'div-button-container\'>';
+        msg += '<input type =\'button\' value=\'Cancel Upgrade\' class=\'button\' onclick=\'javascript: cancelMigration(0);\' />';
+        msg += '</div>';
     }
     else {
-        $("#span-tenantId").html(objIdEmpty);
-        alert("Downgrading system now. Closing migration dialog.");
+
+        $("#span-tenantId").html('');
+
+        alert("Downgrading system now.");
+
+        msg += '<div>';
+        msg += 'Downgrading <i><b>Back</b> to the ' + envLegacyLabel + '</i> from ' + envUpgradeLabel + ' environment.';
+        msg += '</div>';
+        msg += '<div id=\'div-progress-bar-container\'>';
+        msg += '<div id=\'div-progress-bar-detail\'>Downgrade in progress...</div>';
+        msg += '</div>';
+        msg += '<div id=\'div-button-container\'>';
+        msg += '<input type =\'button\' value=\'Cancel Downgrade\' class=\'button\' onclick=\'javascript: cancelMigration(0);\' />';
+        msg += '</div>';
     }
 
-    $("#div-version-switch-panel").toggle();
+
+    $("#div-system-messages").html(msg);
+
+    //$("#div-version-switch-panel").toggle();
 }
