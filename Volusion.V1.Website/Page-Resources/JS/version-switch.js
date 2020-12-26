@@ -10,7 +10,7 @@ const sourceServices = "Svc -> http://localhost/api/";
 var msg = "";
 
 $(document).ready(function () {
-    $("#span-tenantId").html('');
+    $("#span-tenantId").html(objIdEmpty);
     $("#span-envLegacyLabel").html(envLegacyLabel);
     $("#span-envUpgradeLabel").html(envUpgradeLabel);
     $("#span-repository-type").html(sourceDB);
@@ -80,6 +80,7 @@ function continueMigration(migrationType) {
         alert("Upgrading system now. Closing migration dialog.");
     }
     else {
+        $("#span-tenantId").html(objIdEmpty);
         alert("Downgrading system now. Closing migration dialog.");
     }
 
