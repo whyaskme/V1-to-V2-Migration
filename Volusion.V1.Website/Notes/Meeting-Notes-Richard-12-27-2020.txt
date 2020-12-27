@@ -1,0 +1,7 @@
+terminology: PK = TenantId > MerchantId > SiteId?
+
+multi-tenancy: 
+
+entities: 
+
+image handling: 

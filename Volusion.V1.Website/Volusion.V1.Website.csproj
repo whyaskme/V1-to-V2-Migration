@@ -74,6 +74,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="default.asp" />
+    <Content Include="Notes\Meeting-Notes-Richard-12-27-2020.txt" />
     <Content Include="Pages\Images\color-logo.svg" />
     <Content Include="Notes\Renderer_Microservice_Request_Response_Shapes.txt" />
     <Content Include="Notes\V1 Element-like page content.png" />
