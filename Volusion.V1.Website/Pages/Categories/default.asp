@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lte IE 9]><html class="no-js lt-ie10" lang="en" data-category-scroll="true" data-product-reviews="true" data-enable-vol-cart="true" ><![endif]-->
 <!--[if gt IE 9]><!-->
 <html class="js u-loading category has-sidebar vol-login vol-login--false" data-category-scroll="true" data-product-reviews="true" data-enable-vol-cart="true" data-grid-type="grid" data-login-status="false" lang="en"><!--<![endif]--><head>
@@ -399,6 +399,11 @@
 </nav></div>
                 </nav><!-- /slide menu left -->
             <div class="page-wrap">
+
+                <!-- #include virtual="/Site-Migration/Switch-Panel.html" -->
+                <!-- #include virtual="/Pages/Headers/header.html" -->
+                <!-- #include virtual="/Pages/Menus/menu.html" -->
+
                 <header class="header">
                     <div class="header__top">
                         <div class="container">
