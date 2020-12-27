@@ -4,8 +4,8 @@ const objIdTenant = 'ObjectId("57b2229fd00bc11c2c18ec3d")';
 const envLegacyLabel = '<b>v1 (Legacy)</b>';
 const envUpgradeLabel = '<b>v2 (MicroServices)</b>';
 
-const sourceDB = "Db -> localhost\Volusion-V1";
-const sourceServices = "Svc -> http://localhost/api/";
+const sourceDB = "Db => sql:localhost\\Volusion-V1";
+const sourceServices = "Svc => http://localhost/api/MigrationServices";
 
 var msg = "";
 var migrationCompleted = false;
@@ -56,7 +56,7 @@ function migrateVersionToV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Upgrade:</b> We need to migrate your data => Merchant account, users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
+    msg += '<b>Upgrade:</b> We need to migrate your data => Merchant account, users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <b>Forward</b> to the ' + envUpgradeLabel + ' environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
@@ -76,7 +76,7 @@ function migrateVersionFromV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Downgrade:</b> We need to migrate your data => Merchant account, users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
+    msg += '<b>Downgrade:</b> We need to migrate your data => Merchant account, users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <b>Back</b> to the ' + envLegacyLabel + ' environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
@@ -113,7 +113,7 @@ function continueMigration(migrationType) {
         msg += 'Upgrading to ' + envUpgradeLabel + ' from the ' + envLegacyLabel + ' environment.';
         msg += '</div>';
         msg += '<div id=\'div-progress-bar-container\'>';
-        msg += '<div id=\'div-progress-bar-detail\'>Upgrade in progress...</div>';
+        msg += '<div id=\'div-progress-bar-detail\'>Migrating merchant account...</div>';
         msg += '</div>';
         msg += '<div id=\'div-button-container\'>';
         msg += '<input id=\'btn-migrate\' type=\'button\' value=\'Cancel Upgrade\' class=\'button\' onclick=\'javascript: cancelMigration(1);\' />';

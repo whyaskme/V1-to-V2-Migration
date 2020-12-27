@@ -55,6 +55,7 @@ a.a-menu-item {
 #div-version-switch-panel-ribbon {
     text-align: center;
     border: solid 1px #808080;
+    padding-top: 15px;
 }
 
 #div-version-switch-panel-ribbon, #div-version-switch-panel {
@@ -101,7 +102,7 @@ input {
 }
 
 .span-item-detail {
-    border-right: dashed 1px #808080;
+    border-right: solid 1px #808080;
     margin-right: 15px;
     padding-right: 15px;
 }
@@ -141,7 +142,7 @@ input {
     text-align: center;
     color: #ffffff;
     background-color: #221b43 !important;
-    height: 15px !important;
+    height: 20px !important;
 }
 
 #div-progress-bar-detail {
@@ -149,5 +150,6 @@ input {
     color: #ffffff;
     width: 25%;
     height: 100% !important;
-    font-size: 8px;
+    font-size: 11px;
+    padding-top: 0px;
 }
