@@ -7,6 +7,9 @@ const envUpgradeLabel = '<b>v2 (MicroServices)</b>';
 const sourceDB = "Db => sql:localhost\\Volusion-V1";
 const sourceServices = "Svc => http://localhost/api/MigrationServices";
 
+const imgRootPath = '../Pages/Images/';
+let arrHeaderImages = [imgRootPath + 'header-bg-coon-rock-farms.png', imgRootPath + 'header-bg-i-make-magic.png', imgRootPath + 'header-bg-welcome.png']
+
 var msg = "";
 var migrationCompleted = false;
 
@@ -31,7 +34,7 @@ $(document).ready(function () {
     // Reset radio button for page refresh
     $("input[name=opt-version][value=v1]").attr('checked', 'checked');
 
-    //alert("doc ready");
+    //alert("Header: " + arrHeaderImages[0]);
 });
 
 function selectSite(selectedMerchant) {
@@ -46,6 +49,14 @@ function selectSite(selectedMerchant) {
         $("#div-site-menu").show();
         $("#span-header-label").show();
         $("#form-main").show();
+
+        let selectMerchantIndex = $("#sel-merchant-list option:selected").index()-1;
+        //alert("selectMerchantIndex = " + selectMerchantIndex);
+        //alert(arrHeaderImages[selectMerchantIndex]);
+
+        // Set header image
+        $("#img-tenant-logo").attr("src", arrHeaderImages[selectMerchantIndex]);
+        //$("#img-tenant-logo").src(arrHeaderImages[1]);
     }
     else {
         $("#div-header").hide();

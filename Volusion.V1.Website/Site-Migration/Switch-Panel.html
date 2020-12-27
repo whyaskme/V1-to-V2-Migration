@@ -15,8 +15,8 @@
         <select id="sel-merchant-list" onchange="javascript: selectSite(this.value);">
             <option id="-1" value="-1">Select Website</option>
             <option id="0" value="57b2229fd00bc11c2c18ec3d">Coon Rock Farm</option>
-            <option id="1" value="57a1d0dad00bc130c038d1e6">Website 2</option>
-            <option id="2" value="57bebbe7d00bd5381ced588b">Website 3</option>
+            <option id="1" value="57a1d0dad00bc130c038d1e6">I Make Magic</option>
+            <option id="2" value="57bebbe7d00bd5381ced588b">Welcome Fitness</option>
         </select>
         <a href="javascript: expandMigrationPanel();" title="Click to expand migration panel">
             <span id="span-header-label">&raquo; Migrate Site</span>
@@ -25,33 +25,39 @@
 
     <form id="form-main" method="post" action="">
 
-        <span class="span-merchant-details">
-            <label for="span-merchant-appvar">AppVar:</label>
-            <span id="span-merchant-appvar">
-                null
+        <div>
+            <span class="span-merchant-details">
+                <label for="span-merchant-appvar">AppVar:</label>
+                <span id="span-merchant-appvar">
+                    null
+                </span>
             </span>
-        </span>
 
-        <span class="span-merchant-details">
-            <label for="span-merchant-id">Id:</label>
-            <span id="span-merchant-id">
-                null
+            <span class="span-merchant-details">
+                <label for="span-merchant-id">Id:</label>
+                <span id="span-merchant-id">
+                    null
+                </span>
             </span>
-        </span>
 
-        <span class="span-merchant-details">
-            <label for="span-merchant-data-provider">Provider:</label>
-            <span id="span-merchant-data-provider">
-                database
+            <span class="span-merchant-details">
+                <label for="span-merchant-data-provider">Provider:</label>
+                <span id="span-merchant-data-provider">
+                    database
+                </span>
             </span>
-        </span>
 
-        <span class="span-merchant-details">
-            <label for="span-merchant-ismigrated">IsMigrated:</label>
-            <span id="span-merchant-ismigrated">
-                false
+            <span class="span-merchant-details">
+                <label for="span-merchant-ismigrated">IsMigrated:</label>
+                <span id="span-merchant-ismigrated">
+                    false
+                </span>
             </span>
-        </span>
+        </div>
+
+        <div id="div-guidance">
+            Migration guidance....
+        </div>
 
     </form>
 </div>
