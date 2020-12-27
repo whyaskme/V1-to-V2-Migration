@@ -114,7 +114,7 @@
     <Content Include="Site-Migration\V1-V2-Styles.css" />
     <Content Include="Site-Migration\version-switch.js" />
     <Content Include="Site-Migration\Switch-Panel.html" />
-    <Content Include="Pages\Categories\default.htm" />
+    <Content Include="Pages\Categories\default.asp" />
     <Content Include="Pages\Categories\default_files\ajax-loader.gif" />
     <Content Include="Pages\Categories\default_files\clear1x1.gif" />
     <Content Include="Pages\Categories\default_files\content.css" />
@@ -143,7 +143,7 @@
     <Content Include="Pages\Categories\default_files\vnav.css" />
     <Content Include="Pages\Categories\default_files\vnav.js" />
     <Content Include="Pages\Categories\default_files\volusion.js" />
-    <Content Include="Pages\Products\default.htm" />
+    <Content Include="Pages\Products\default.asp" />
     <Content Include="Pages\Products\default_files\a.html" />
     <Content Include="Pages\Products\default_files\addthis_widget.js" />
     <Content Include="Pages\Products\default_files\all.js" />
@@ -338,7 +338,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="Pages\Templates\" />
   </ItemGroup>
   <PropertyGroup>
