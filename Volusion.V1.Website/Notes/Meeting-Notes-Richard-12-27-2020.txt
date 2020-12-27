@@ -1,4 +1,4 @@
-terminology: 
+terminology: PK = TenantId > MerchantId > SiteId?
 
 multi-tenancy: 
 
