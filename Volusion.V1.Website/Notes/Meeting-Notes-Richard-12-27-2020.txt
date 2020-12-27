@@ -1,7 +1,23 @@
-terminology: PK = TenantId > MerchantId > SiteId?
+Terminology: v1 monolithic, v2 multi-tenancy PK = TenantId > MerchantId > SiteId?
 
-multi-tenancy: 
+Database types: v1 = sqlserver? v2 = ???
 
-entities: 
+Multi-tenancy: singular db design with tenancyId as pk?
 
-image handling: 
+Entities: 
+	Merchant account: 
+	
+	Users: (admin, customer & affiliate): 
+
+	Products: 
+
+	Images: stored as blobs or disk with paths in products table?
+
+	Orders: 
+
+	Providers:
+		messaging, notification, payment & social
+
+Image handling: 
+
+ETL process: 
