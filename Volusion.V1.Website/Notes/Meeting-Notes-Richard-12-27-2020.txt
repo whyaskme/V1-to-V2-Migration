@@ -1,17 +1,21 @@
 Terminology: v1 monolithic, v2 multi-tenancy PK = TenantId > MerchantId > SiteId?
 
+Source Control: Branching strategy? Main > Dev > bugfix/feature?
+
 Database types: v1 = sqlserver? v2 = ???
 
 Multi-tenancy: singular db design with tenancyId as pk?
 
 Entities: 
-	Merchant account: 
+	Merchant account: Tenancy?
 	
-	Users: (admin, customer & affiliate): 
+	Users: 
+		admin, customer & affiliate
 
 	Products: 
 
-	Images: stored as blobs or disk with paths in products table?
+	Images: 
+		stored as blobs or disk with paths in products table?
 
 	Orders: 
 
@@ -19,5 +23,8 @@ Entities:
 		messaging, notification, payment & social
 
 Image handling: 
+
+Page templates: 
+	Are page templates same between v1 > v2?
 
 ETL process: 
