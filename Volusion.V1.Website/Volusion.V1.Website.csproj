@@ -81,6 +81,10 @@
     <Content Include="Pages\Headers\header_bg_V1.jpg" />
     <Content Include="Pages\Menus\menu.html" />
     <Content Include="product-a.asp" />
+    <Content Include="Content\default.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.js" />
+    <Content Include="Content\jquery.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
