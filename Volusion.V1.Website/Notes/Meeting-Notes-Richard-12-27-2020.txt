@@ -1,0 +1,7 @@
+terminology: 
+
+multi-tenancy: 
+
+entities: 
+
+image handling: 
