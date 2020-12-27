@@ -1,0 +1,17 @@
+# Block-Renderer Microservice
+
+## POST /render
+
+### Request shape
+{
+  blockCode: string,
+  config: { [key: string]: any }
+}
+
+### Response shape
+{
+  cssClassNames: Array<string>,
+  css: string,
+  html: string,
+  hydrationData: { [key: string]: any }
+}

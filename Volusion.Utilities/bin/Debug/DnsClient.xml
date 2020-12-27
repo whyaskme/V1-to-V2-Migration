@@ -16,7 +16,7 @@
         </member>
         <member name="T:DnsClient.Protocol.AaaaRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending an IPv6 <see cref="T:System.Net.IPAddress"/>.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing an IPv6 <see cref="T:System.Net.IPAddress"/>.
             <para>
             A 128 bit IPv6 address is encoded in the data portion of an AAAA
             resource record in network byte order(high-order byte first).
@@ -103,7 +103,7 @@
         </member>
         <member name="T:DnsClient.Protocol.ARecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending an IPv4 <see cref="T:System.Net.IPAddress"/>.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing an IPv4 <see cref="T:System.Net.IPAddress"/>.
             Hosts that have multiple Internet addresses will have multiple A records.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035">RFC 1035</seealso>
@@ -159,7 +159,7 @@
         </member>
         <member name="T:DnsClient.Protocol.CNameRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> repesenting the canonical name for an alias.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing the canonical name for an alias.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.1">RFC 1035</seealso>
         </member>
@@ -199,7 +199,7 @@
             <summary>
             Same as <c>ToString</c> but offsets the <see cref="P:DnsClient.Protocol.ResourceRecordInfo.DomainName"/>
             by <paramref name="offset"/>.
-            Set the offset to -32 for example to make it print nicely in consols.
+            Set the offset to -32 for example to make it print nicely in consoles.
             </summary>
             <param name="offset">The offset.</param>
             <returns>A string representing this instance.</returns>
@@ -270,7 +270,7 @@
         </member>
         <member name="T:DnsClient.Protocol.EmptyRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> not representing any specifc resource record.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> not representing any specific resource record.
             Used if unsupported <see cref="T:DnsClient.Protocol.ResourceRecordType"/>s are found in the result.
             </summary>
             <seealso cref="T:DnsClient.Protocol.DnsResourceRecord" />
@@ -294,7 +294,7 @@
             Gets a <c>string</c> which specifies the CPU type.
             </summary>
             <value>
-            The cpu.
+            The CPU.
             </value>
         </member>
         <member name="P:DnsClient.Protocol.HInfoRecord.OS">
@@ -302,7 +302,7 @@
             Gets a <c>string</c> which specifies the operating system type.
             </summary>
             <value>
-            The os.
+            The OS.
             </value>
         </member>
         <member name="M:DnsClient.Protocol.HInfoRecord.#ctor(DnsClient.Protocol.ResourceRecordInfo,System.String,System.String)">
@@ -310,13 +310,13 @@
             Initializes a new instance of the <see cref="T:DnsClient.Protocol.HInfoRecord"/> class.
             </summary>
             <param name="info">The information.</param>
-            <param name="cpu">The cpu.</param>
-            <param name="os">The os.</param>
+            <param name="cpu">The CPU.</param>
+            <param name="os">The OS.</param>
             <exception cref="T:System.ArgumentNullException">If <paramref name="info"/> is null.</exception>
         </member>
         <member name="T:DnsClient.Protocol.MbRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a domain name which specifies a host which has the specified mailbox.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a domain name which specifies a host which has the specified mailbox.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.3">RFC 1035</seealso>
         </member>
@@ -338,13 +338,13 @@
         </member>
         <member name="T:DnsClient.Protocol.MgRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a domain name which specifies a mailbox which is a member of the mail group specified by the domain name.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a domain name which specifies a mailbox which is a member of the mail group specified by the domain name.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.6">RFC 1035</seealso>
         </member>
         <member name="P:DnsClient.Protocol.MgRecord.MgName">
             <summary>
-            Gets a domain name which specifies a mailbox which is a member of the mail group specified by the domain nam.
+            Gets a domain name which specifies a mailbox which is a member of the mail group specified by the domain name.
             </summary>
             <value>
             The domain name.
@@ -360,7 +360,7 @@
         </member>
         <member name="T:DnsClient.Protocol.MInfoRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending mailbox or mail list information.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing mailbox or mail list information.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.11">RFC 1035</seealso>
         </member>
@@ -391,7 +391,7 @@
         </member>
         <member name="T:DnsClient.Protocol.MrRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a mailbox rename domain name.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a mailbox rename domain name.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.8">RFC 1035</seealso>
         </member>
@@ -413,7 +413,7 @@
         </member>
         <member name="T:DnsClient.Protocol.MxRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a mail exchange.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a mail exchange.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.9">RFC 1035</seealso>
             <seealso href="https://tools.ietf.org/html/rfc974">RFC 974</seealso>
@@ -441,7 +441,7 @@
         </member>
         <member name="T:DnsClient.Protocol.NsRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending an authoritative name server.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing an authoritative name server.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.11">RFC 1035</seealso>
         </member>
@@ -495,7 +495,7 @@
         </member>
         <member name="T:DnsClient.Protocol.PtrRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a pointer. These RRs are used
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a pointer. These RRs are used
             in special domains to point to some other location in the domain space.
             </summary>
             <seealso cref="T:DnsClient.Protocol.DnsResourceRecord" />
@@ -704,7 +704,7 @@
         </member>
         <member name="T:DnsClient.Protocol.RpRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a responsible person.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a responsible person.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1183#section-2.2">RFC 1183</seealso>
         </member>
@@ -737,7 +737,7 @@
         </member>
         <member name="T:DnsClient.Protocol.SoaRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a SOA (Start Of Authority) record.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a SOA (Start Of Authority) record.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc1035#section-3.3.13">RFC 1035</seealso>
         </member>
@@ -765,7 +765,7 @@
             Gets the domain name of the name server that was the original or primary source of data for this zone.
             </summary>
             <value>
-            The doman name.
+            The domain name.
             </value>
         </member>
         <member name="P:DnsClient.Protocol.SoaRecord.Refresh">
@@ -819,7 +819,7 @@
         </member>
         <member name="T:DnsClient.Protocol.SrvRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a location of the server(s) for a specific protocol and domain.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a location of the server(s) for a specific protocol and domain.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc2782">RFC 2782</seealso>
         </member>
@@ -861,14 +861,14 @@
             </summary>
             <param name="info">The information.</param>
             <param name="priority">The priority.</param>
-            <param name="weigth">The weigth.</param>
+            <param name="weight">The weight.</param>
             <param name="port">The port.</param>
             <param name="target">The target.</param>
             <exception cref="T:System.ArgumentNullException">If <paramref name="info"/> or <paramref name="target"/> is null.</exception>
         </member>
         <member name="T:DnsClient.Protocol.SshfpRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending an SSH fingerprint
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing an SSH fingerprint
             <para>
             SSHFP RRs are used to hold SSH fingerprints. Upon connecting to a
             host an SSH client may choose to query for this to check the fingerprint(s)
@@ -924,7 +924,7 @@
         </member>
         <member name="F:DnsClient.Protocol.SshfpAlgorithm.ECDSA">
             <summary>
-            Eliptic Curve DSA
+            Elliptic Curve DSA
             </summary>
         </member>
         <member name="F:DnsClient.Protocol.SshfpAlgorithm.Ed25519">
@@ -954,7 +954,7 @@
         </member>
         <member name="T:DnsClient.Protocol.TxtRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a text resource.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a text resource.
             <para>
             TXT RRs are used to hold descriptive text. The semantics of the text
             depends on the domain where it is found.
@@ -1011,7 +1011,7 @@
         </member>
         <member name="T:DnsClient.Protocol.UriRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a Uniform Resource Identifier (URI) resource.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a Uniform Resource Identifier (URI) resource.
             </summary>
             <seealso href="https://tools.ietf.org/html/rfc7553">RFC 7553</seealso>
         </member>
@@ -1031,12 +1031,12 @@
             The priority.
             </value>
         </member>
-        <member name="P:DnsClient.Protocol.UriRecord.Weigth">
+        <member name="P:DnsClient.Protocol.UriRecord.Weight">
             <summary>
-            Gets or sets the weigth.
+            Gets or sets the weight.
             </summary>
             <value>
-            The weigth.
+            The weight.
             </value>
         </member>
         <member name="M:DnsClient.Protocol.UriRecord.#ctor(DnsClient.Protocol.ResourceRecordInfo,System.UInt16,System.UInt16,System.String)">
@@ -1051,7 +1051,7 @@
         </member>
         <member name="T:DnsClient.Protocol.WksRecord">
             <summary>
-            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> represending a Well Known Service description.
+            A <see cref="T:DnsClient.Protocol.DnsResourceRecord"/> representing a Well Known Service description.
             </summary>
             <remarks>
             Instead of describing the supported protocols in RFCs, the list is now published on http://www.iana.org/.
@@ -1567,7 +1567,7 @@
         </member>
         <member name="P:DnsClient.ServiceHostEntry.Priority">
             <summary>
-            Gets or sets priortiy of the original <see cref="F:DnsClient.Protocol.ResourceRecordType.SRV"/> record.
+            Gets or sets priority of the original <see cref="F:DnsClient.Protocol.ResourceRecordType.SRV"/> record.
             Might be zero if not provided.
             </summary>
             <value>
@@ -1726,7 +1726,7 @@
         </member>
         <member name="P:DnsClient.DnsQueryOptions.UseTcpFallback">
             <summary>
-            Gets or sets a flag indicating whether Tcp should be used in case a Udp response is truncated.
+            Gets or sets a flag indicating whether TCP should be used in case a UDP response is truncated.
             Default is <c>True</c>.
             <para>
             If <c>False</c>, truncated results will potentially yield no or incomplete answers.
@@ -1735,10 +1735,10 @@
         </member>
         <member name="P:DnsClient.DnsQueryOptions.UseTcpOnly">
             <summary>
-            Gets or sets a flag indicating whether Udp should not be used at all.
+            Gets or sets a flag indicating whether UDP should not be used at all.
             Default is <c>False</c>.
             <para>
-            Enable this only if Udp cannot be used because of your firewall rules for example.
+            Enable this only if UDP cannot be used because of your firewall rules for example.
             Also, zone transfers (see <see cref="F:DnsClient.QueryType.AXFR"/>) must use TCP only.
             </para>
             </summary>
@@ -1855,11 +1855,11 @@
             TTL of the record is lower than this minimum value.
             Default is <c>Null</c>.
             <para>
-            This is useful in case the server retruns records with zero TTL.
+            This is useful in case the server returns records with zero TTL.
             </para>
             </summary>
             <remarks>
-            This setting gets igonred in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>,
+            This setting gets ignored in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>,
             or the value is set to <c>Null</c> or <see cref="F:System.TimeSpan.Zero"/>.
             The maximum value is 24 days or <see cref="F:System.Threading.Timeout.Infinite"/> (choose a wise setting).
             </remarks>
@@ -1871,7 +1871,7 @@
             Default is <c>Null</c>.
             </summary>
             <remarks>
-            This setting gets igonred in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>,
+            This setting gets ignored in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>,
             or the value is set to <c>Null</c>, <see cref="F:System.Threading.Timeout.Infinite"/> or <see cref="F:System.TimeSpan.Zero"/>.
             The maximum value is 24 days (which shouldn't be used).
             </remarks>
@@ -2009,7 +2009,7 @@
         </member>
         <member name="P:DnsClient.DnsQuerySettings.UseTcpFallback">
             <summary>
-            Gets a flag indicating whether Tcp should be used in case a Udp response is truncated.
+            Gets a flag indicating whether TCP should be used in case a UDP response is truncated.
             Default is <c>True</c>.
             <para>
             If <c>False</c>, truncated results will potentially yield no or incomplete answers.
@@ -2018,10 +2018,10 @@
         </member>
         <member name="P:DnsClient.DnsQuerySettings.UseTcpOnly">
             <summary>
-            Gets a flag indicating whether Udp should not be used at all.
+            Gets a flag indicating whether UDP should not be used at all.
             Default is <c>False</c>.
             <para>
-            Enable this only if Udp cannot be used because of your firewall rules for example.
+            Enable this only if UDP cannot be used because of your firewall rules for example.
             Also, zone transfers (see <see cref="F:DnsClient.QueryType.AXFR"/>) must use TCP only.
             </para>
             </summary>
@@ -2100,11 +2100,11 @@
             TTL of the record is lower than this minimum value.
             Default is <c>Null</c>.
             <para>
-            This is useful in cases where the server retruns records with zero TTL.
+            This is useful in cases where the server returns records with zero TTL.
             </para>
             </summary>
             <remarks>
-            This setting gets igonred in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>.
+            This setting gets ignored in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>.
             The maximum value is 24 days or <see cref="F:System.Threading.Timeout.Infinite"/>.
             </remarks>
         </member>
@@ -2115,7 +2115,7 @@
             Default is <c>Null</c>.
             </summary>
             <remarks>
-            This setting gets igonred in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>.
+            This setting gets ignored in case <see cref="P:DnsClient.DnsQueryOptions.UseCache"/> is set to <c>False</c>.
             The maximum value is 24 days.
             Setting it to <see cref="F:System.Threading.Timeout.Infinite"/> would be equal to not providing a value.
             </remarks>
@@ -2148,7 +2148,7 @@
         </member>
         <member name="P:DnsClient.DnsQueryResponse.AllRecords">
             <summary>
-            Gets a list of all answers, addtional and authority records.
+            Gets a list of all answers, additional and authority records.
             </summary>
         </member>
         <member name="P:DnsClient.DnsQueryResponse.AuditTrail">
@@ -2171,13 +2171,13 @@
         </member>
         <member name="P:DnsClient.DnsQueryResponse.ErrorMessage">
             <summary>
-            Returns a string value representing the error response code in case an error occured,
+            Returns a string value representing the error response code in case an error occurred,
             otherwise '<see cref="F:DnsClient.DnsResponseCode.NoError"/>'.
             </summary>
         </member>
         <member name="P:DnsClient.DnsQueryResponse.HasError">
             <summary>
-            A flag indicating if the header contains a response codde other than <see cref="F:DnsClient.DnsResponseCode.NoError"/>.
+            A flag indicating if the header contains a response code other than <see cref="F:DnsClient.DnsResponseCode.NoError"/>.
             </summary>
         </member>
         <member name="P:DnsClient.DnsQueryResponse.Header">
@@ -2219,7 +2219,7 @@
         </member>
         <member name="P:DnsClient.DnsQuestion.QueryName">
             <summary>
-            Gets the domain name the lookup was runnig for.
+            Gets the domain name the lookup was running for.
             </summary>
             <value>
             The name of the query.
@@ -2759,17 +2759,17 @@
         </member>
         <member name="F:DnsClient.DnsString.ACEPrefix">
             <summary>
-            The ACE prefix indicates that the domain name label contains not normally supported characters and that the label has been endoded.
+            The ACE prefix indicates that the domain name label contains not normally supported characters and that the label has been encoded.
             </summary>
         </member>
         <member name="F:DnsClient.DnsString.LabelMaxLength">
             <summary>
-            The maximum lenght in bytes for one label.
+            The maximum length in bytes for one label.
             </summary>
         </member>
         <member name="F:DnsClient.DnsString.QueryMaxLength">
             <summary>
-            The maximum supported total length in bytes for a domain nanme. The calculation of the actual
+            The maximum supported total length in bytes for a domain name. The calculation of the actual
             bytes this <see cref="T:DnsClient.DnsString"/> consumes includes all bytes used for to encode it as octet string.
             </summary>
         </member>
@@ -2780,7 +2780,7 @@
         </member>
         <member name="P:DnsClient.DnsString.Original">
             <summary>
-            Gets the orginal value.
+            Gets the original value.
             </summary>
         </member>
         <member name="P:DnsClient.DnsString.Value">
@@ -2819,7 +2819,7 @@
         </member>
         <member name="M:DnsClient.DnsString.FromResponseQueryString(System.String)">
             <summary>
-            Transforms names with the <see cref="F:DnsClient.DnsString.ACEPrefix"/> to the unicode variant and adds a trailing '.' at the end if not present.
+            Transforms names with the <see cref="F:DnsClient.DnsString.ACEPrefix"/> to the Unicode variant and adds a trailing '.' at the end if not present.
             The original value will be kept in this instance in case it is needed.
             </summary>
             <remarks>
@@ -3302,7 +3302,7 @@
         </member>
         <member name="P:DnsClient.IDnsQueryResponse.AllRecords">
             <summary>
-            Gets a list of all answers, addtional and authority records.
+            Gets a list of all answers, additional and authority records.
             </summary>
         </member>
         <member name="P:DnsClient.IDnsQueryResponse.Answers">
@@ -3325,13 +3325,13 @@
         </member>
         <member name="P:DnsClient.IDnsQueryResponse.ErrorMessage">
             <summary>
-            Returns a string value representing the error response code in case an error occured,
+            Returns a string value representing the error response code in case an error occurred,
             otherwise '<see cref="F:DnsClient.DnsResponseCode.NoError"/>'.
             </summary>
         </member>
         <member name="P:DnsClient.IDnsQueryResponse.HasError">
             <summary>
-            A flag indicating if the header contains a response codde other than <see cref="F:DnsClient.DnsResponseCode.NoError"/>.
+            A flag indicating if the header contains a response code other than <see cref="F:DnsClient.DnsResponseCode.NoError"/>.
             </summary>
         </member>
         <member name="P:DnsClient.IDnsQueryResponse.Header">
@@ -3390,7 +3390,7 @@
              <seealso cref="T:DnsClient.IDnsQuery"/>
              <seealso cref="T:DnsClient.ILookupClient"/>
              <example>
-             A basic example wihtout specifying any DNS server, which will use the DNS server configured by your local network.
+             A basic example without specifying any DNS server, which will use the DNS server configured by your local network.
              <code>
              <![CDATA[
              var client = new LookupClient();
@@ -3482,7 +3482,7 @@
             ]]>
             </code>
             <para>
-            The <see cref="T:DnsClient.NameServer"/> class also contains pre defined <see cref="T:System.Net.IPEndPoint"/>s for the public google DNS servers, which can be used as follows:
+            The <see cref="T:DnsClient.NameServer"/> class also contains predefined <see cref="T:System.Net.IPEndPoint"/>s for the public Google DNS servers, which can be used as follows:
             <code>
             <![CDATA[
             var client = new LookupClient(NameServer.GooglePublicDns, NameServer.GooglePublicDnsIPv6);
@@ -3610,22 +3610,22 @@
         </member>
         <member name="F:DnsClient.NameServer.GooglePublicDns">
             <summary>
-            The public google DNS IPv4 endpoint.
+            The public Google DNS IPv4 endpoint.
             </summary>
         </member>
         <member name="F:DnsClient.NameServer.GooglePublicDns2">
             <summary>
-            The second public google DNS IPv6 endpoint.
+            The second public Google DNS IPv6 endpoint.
             </summary>
         </member>
         <member name="F:DnsClient.NameServer.GooglePublicDnsIPv6">
             <summary>
-            The public google DNS IPv6 endpoint.
+            The public Google DNS IPv6 endpoint.
             </summary>
         </member>
         <member name="F:DnsClient.NameServer.GooglePublicDns2IPv6">
             <summary>
-            The second public google DNS IPv6 endpoint.
+            The second public Google DNS IPv6 endpoint.
             </summary>
         </member>
         <member name="F:DnsClient.NameServer.Cloudflare">
@@ -3729,11 +3729,11 @@
             <summary>
             Gets a list of name servers by iterating over the available network interfaces.
             <para>
-            If <paramref name="fallbackToGooglePublicDns" /> is enabled, this method will return the google public dns endpoints if no
+            If <paramref name="fallbackToGooglePublicDns" /> is enabled, this method will return the Google public DNS endpoints if no
             local DNS server was found.
             </para>
             </summary>
-            <param name="skipIPv6SiteLocal">If set to <c>true</c> local IPv6 sites are skiped.</param>
+            <param name="skipIPv6SiteLocal">If set to <c>true</c> local IPv6 sites are skipped.</param>
             <param name="fallbackToGooglePublicDns">If set to <c>true</c> the public Google DNS servers are returned if no other servers could be found.</param>
             <returns>
             The list of name servers.
