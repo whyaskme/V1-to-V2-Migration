@@ -35,7 +35,24 @@ $(document).ready(function () {
 });
 
 function selectSite(selectedMerchant) {
-    alert("Merchant: " + selectedMerchant);
+    //alert("Call WebApi to get legacy ( " + selectedMerchant + " ) info");
+
+    $("#span-merchant-id").html(selectedMerchant);
+    //$("#form-main").submit();
+
+    if (selectedMerchant != "-1") {
+        //
+        $("#div-header").show();
+        $("#div-site-menu").show();
+        $("#span-header-label").show();
+        $("#form-main").show();
+    }
+    else {
+        $("#div-header").hide();
+        $("#div-site-menu").hide();
+        $("#span-header-label").hide();
+        $("#form-main").hide();
+    }
 }
 
 function expandMigrationPanel() {

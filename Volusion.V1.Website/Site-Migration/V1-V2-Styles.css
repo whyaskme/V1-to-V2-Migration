@@ -7,6 +7,38 @@
     line-height: 1.7;
 }
 
+#div-header, #div-site-menu, #span-header-label, #form-main {
+    display: none;
+    text-align: center;
+}
+
+#div-site-menu {
+    padding: 10px;
+    border-bottom: solid 1px #808080;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+select {
+    border: solid 1px #808080;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 3px;
+}
+
+#form-main
+{
+    position: relative;
+    top: 5px;
+}
+
+.span-merchant-details {
+    border-right: solid 1px #808080;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
 #display_homepage_title {
     text-align: center;
 }
@@ -25,14 +57,6 @@ a, a:visited {
     text-decoration: none;
 }
 
-#div-site-menu {
-    padding: 10px;
-    border-bottom: solid 1px #808080;
-    text-align: center;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-}
-
 a.a-menu-item {
     font-weight: bold;
     border-right: solid 1px #808080;
@@ -42,9 +66,9 @@ a.a-menu-item {
 
 #span-header-label {
     position: relative;
-    top: -5px !important;
+    top: 0px !important;
     font-weight: bold !important;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #volusion-logo {

@@ -1,25 +1,60 @@
 ﻿<link type="text/css" href="../Content/jquery-ui.css" rel="stylesheet">
 <link type="text/css" href="../Content/default.css" rel="stylesheet">
 
-<script type="text/javascript" src="../Content/jquery.js"></script>
-<script type="text/javascript" src="../Content/jquery-ui.js"></script>
+<script type="text/javascript" src="../Scripts/jquery.js"></script>
+<script type="text/javascript" src="../Scripts/jquery-ui.js"></script>
 
 <link href="../Site-Migration/V1-V2-Styles.css" rel="stylesheet" />
 <script src="../Site-Migration/version-switch.js" type="text/javascript"></script>
 
-<a href="javascript: expandMigrationPanel();" title="Click to expand migration panel">
-    <div id="div-version-switch-panel-ribbon">
+<div id="div-version-switch-panel-ribbon">
+    <a href="/default.asp" title="Home">
         <img id="volusion-logo" src="/Pages/Images/color-logo.svg" />
-        <span id="span-header-label"> &raquo; Platform Migration</span>
-        <div id="span-header-merchant-list">Merchants
-            <select id="sel-merchant-list" onchange="javascript: selectSite(this.value);">
-                <option id="0">Coon Rock Farm</option>
-                <option id="1">Site 2</option>
-                <option id="2">Site 3</option>
-            </select>
-        </div>
+    </a>
+    <div id="span-header-merchant-list">Merchants
+        <select id="sel-merchant-list" onchange="javascript: selectSite(this.value);">
+            <option id="-1" value="-1">Select Website</option>
+            <option id="0" value="57b2229fd00bc11c2c18ec3d">Coon Rock Farm</option>
+            <option id="1" value="57a1d0dad00bc130c038d1e6">Website 2</option>
+            <option id="2" value="57bebbe7d00bd5381ced588b">Website 3</option>
+        </select>
+        <a href="javascript: expandMigrationPanel();" title="Click to expand migration panel">
+            <span id="span-header-label">&raquo; Migrate Site</span>
+        </a>
     </div>
-</a>
+
+    <form id="form-main" method="post" action="">
+
+        <span class="span-merchant-details">
+            <label for="span-merchant-appvar">AppVar:</label>
+            <span id="span-merchant-appvar">
+                null
+            </span>
+        </span>
+
+        <span class="span-merchant-details">
+            <label for="span-merchant-id">Id:</label>
+            <span id="span-merchant-id">
+                null
+            </span>
+        </span>
+
+        <span class="span-merchant-details">
+            <label for="span-merchant-data-provider">Provider:</label>
+            <span id="span-merchant-data-provider">
+                database
+            </span>
+        </span>
+
+        <span class="span-merchant-details">
+            <label for="span-merchant-ismigrated">IsMigrated:</label>
+            <span id="span-merchant-ismigrated">
+                false
+            </span>
+        </span>
+
+    </form>
+</div>
 
 <div id="div-version-switch-panel">
     <div class="div-switch-panel-item">
