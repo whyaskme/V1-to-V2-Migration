@@ -66,7 +66,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="categories-bu.asp" />
     <Content Include="categories.asp" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -74,67 +73,14 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="default-ORIGINAL.asp" />
-    <Content Include="default-bu.asp" />
     <Content Include="default.asp" />
-    <Content Include="Images\color-logo.svg" />
+    <Content Include="Pages\Images\color-logo.svg" />
     <Content Include="Notes\Renderer_Microservice_Request_Response_Shapes.txt" />
     <Content Include="Notes\V1 Element-like page content.png" />
-    <Content Include="Page-Resources\V1\Categories\Agriculture.html" />
-    <Content Include="Page-Resources\V1\Categories\Meat.html" />
-    <Content Include="Page-Resources\V1\Categories\Produce.html" />
-    <Content Include="Page-Resources\V1\Categories\promo-01.jpg" />
-    <Content Include="Page-Resources\V1\Categories\promo-02.jpg" />
-    <Content Include="Page-Resources\V1\Categories\promo-03.jpg" />
-    <Content Include="Page-Resources\V1\Categories\promo-04.jpg" />
-    <Content Include="Page-Resources\V1\Categories\Recipes.html" />
-    <Content Include="Page-Resources\V1\Header\header.html" />
-    <Content Include="Page-Resources\V1\Header\header_bg_V1.jpg" />
-    <Content Include="Page-Resources\V2\Categories\Agriculture.html" />
-    <Content Include="Page-Resources\V2\Categories\Meat.html" />
-    <Content Include="Page-Resources\V2\Categories\Produce.html" />
-    <Content Include="Page-Resources\V2\Categories\promo-01.jpg" />
-    <Content Include="Page-Resources\V2\Categories\promo-02.jpg" />
-    <Content Include="Page-Resources\V2\Categories\promo-03.jpg" />
-    <Content Include="Page-Resources\V2\Categories\promo-04.jpg" />
-    <Content Include="Page-Resources\V2\Categories\Recipes.html" />
-    <Content Include="Page-Resources\V2\Header\header.html" />
-    <Content Include="Page-Resources\V2\Header\header_bg_v2.jpg" />
     <Content Include="Pages\Headers\header.html" />
     <Content Include="Pages\Headers\header_bg_V1.jpg" />
     <Content Include="Pages\Menus\menu.html" />
     <Content Include="product-a.asp" />
-    <Content Include="Sample-Resources\1592329242538.jpg" />
-    <Content Include="Sample-Resources\about.jpg" />
-    <Content Include="Sample-Resources\content.css" />
-    <Content Include="Sample-Resources\css2.css" />
-    <Content Include="Sample-Resources\default.css" />
-    <Content Include="Sample-Resources\design-toolkit.js" />
-    <Content Include="Sample-Resources\header_bg.png" />
-    <Content Include="Sample-Resources\javascripts.js" />
-    <Content Include="Sample-Resources\jquery-ui.css" />
-    <Content Include="Sample-Resources\jquery-ui.js" />
-    <Content Include="Sample-Resources\jquery.js" />
-    <Content Include="Sample-Resources\jquery_002.js" />
-    <Content Include="Sample-Resources\owl.css" />
-    <Content Include="Sample-Resources\owl.js" />
-    <Content Include="Sample-Resources\paypal-rest-default-buttons.js" />
-    <Content Include="Sample-Resources\promo-01.jpg" />
-    <Content Include="Sample-Resources\promo-02.jpg" />
-    <Content Include="Sample-Resources\promo-03.jpg" />
-    <Content Include="Sample-Resources\promo-04.jpg" />
-    <Content Include="Sample-Resources\snippets.css" />
-    <Content Include="Sample-Resources\soft_add.css" />
-    <Content Include="Sample-Resources\soft_add.js" />
-    <Content Include="Sample-Resources\soft_add_mult.js" />
-    <Content Include="Sample-Resources\style-editor-defaults.css" />
-    <Content Include="Sample-Resources\template.css" />
-    <Content Include="Sample-Resources\template.js" />
-    <Content Include="Sample-Resources\theme-icons-base.css" />
-    <Content Include="Sample-Resources\vnav.css" />
-    <Content Include="Sample-Resources\vnav.js" />
-    <Content Include="Sample-Resources\volusion-owl.css" />
-    <Content Include="Sample-Resources\volusion.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -268,7 +214,6 @@
     <Content Include="Pages\Products\default_files\WA-Peeptoe-2T.jpg" />
     <Content Include="Pages\Products\default_files\WT-Peasant-1.jpg" />
     <Content Include="Pages\Products\default_files\WT-Peasant-2T.jpg" />
-    <Content Include="WebForm1.aspx" />
     <None Include="Notes\Request_Response_Example.json" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -354,17 +299,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IISHandler1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Providers\Database\IISHandler1.cs" />
     <Compile Include="Repositories\Providers\Services\IISHandler1.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -394,7 +331,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Images\" />
+    <Folder Include="Images\" />
+    <Folder Include="Pages\Templates\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
