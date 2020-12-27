@@ -7,6 +7,7 @@ C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Data.Models.pdb
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Utilities.dll
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Utilities.pdb
+C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\bin\Debug\netstandard2.0\Volusion.Utilities.dll.config
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.csprojAssemblyReference.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.AssemblyInfoInputs.cache
 C:\Joes Data\Projects\1 GitHub\whyaskme\V1-to-V2-Migration\Volusion.Data.Models\obj\Debug\netstandard2.0\Volusion.Data.Models.AssemblyInfo.cs

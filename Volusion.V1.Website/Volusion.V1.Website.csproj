@@ -78,6 +78,8 @@
     <Content Include="default-bu.asp" />
     <Content Include="default.asp" />
     <Content Include="Images\color-logo.svg" />
+    <Content Include="Notes\Renderer_Microservice_Request_Response_Shapes.txt" />
+    <Content Include="Notes\V1 Element-like page content.png" />
     <Content Include="Page-Resources\V1\Categories\Agriculture.html" />
     <Content Include="Page-Resources\V1\Categories\Meat.html" />
     <Content Include="Page-Resources\V1\Categories\Produce.html" />
@@ -157,6 +159,7 @@
     <Content Include="Site-Migration\version-switch.js" />
     <Content Include="Site-Migration\Switch-Panel.html" />
     <Content Include="WebForm1.aspx" />
+    <None Include="Notes\Request_Response_Example.json" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
