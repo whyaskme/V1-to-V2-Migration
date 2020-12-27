@@ -102,6 +102,7 @@
     <Content Include="Page-Resources\V2\Header\header_bg_v2.jpg" />
     <Content Include="Pages\Headers\header.html" />
     <Content Include="Pages\Headers\header_bg_V1.jpg" />
+    <Content Include="Pages\Menus\menu.html" />
     <Content Include="product-a.asp" />
     <Content Include="Sample-Resources\1592329242538.jpg" />
     <Content Include="Sample-Resources\about.jpg" />
@@ -394,7 +395,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\Images\" />
-    <Folder Include="Pages\Menus\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -11,6 +11,7 @@
     <div id="div-page-container">
 
         <!-- #include virtual="/Pages/Headers/header.html" -->
+        <!-- #include virtual="/Pages/Menus/menu.html" -->
 
         <div id="div-page-content">
 

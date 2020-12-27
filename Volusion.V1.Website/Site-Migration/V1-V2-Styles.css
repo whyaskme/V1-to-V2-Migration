@@ -8,10 +8,7 @@
 }
 
 #display_homepage_title {
-    border-bottom: solid 1px #808080;
     text-align: center;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
 }
 
 #div-page-container {
@@ -28,9 +25,12 @@ a, a:visited {
     text-decoration: none;
 }
 
-#div-site-menu
-{
+#div-site-menu {
     padding: 10px;
+    border-bottom: solid 1px #808080;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 a.a-menu-item {

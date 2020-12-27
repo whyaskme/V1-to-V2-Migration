@@ -9,11 +9,12 @@
 
     <div id="div-page-container">
 
-        <!-- #include virtual="/Page-Resources/V1/Header/header.html" -->
+        <!-- #include virtual="/Pages/Headers/header.html" -->
+        <!-- #include virtual="/Pages/Menus/menu.html" -->
 
         <div id="div-page-content">
 
-            <h2>Categories</h2>
+            <h2>Categories Page Template</h2>
 
             <p>
                 Content placeholder
