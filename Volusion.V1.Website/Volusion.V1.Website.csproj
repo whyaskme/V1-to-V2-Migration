@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="categories.asp" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -73,15 +74,29 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="default-ORIGINAL.asp" />
+    <Content Include="default-bu.asp" />
     <Content Include="default.asp" />
     <Content Include="Images\color-logo.svg" />
-    <Content Include="Page-Resources\CSS\V1-V2-Styles.css" />
-    <Content Include="Page-Resources\JS\version-switch.js" />
+    <Content Include="Page-Resources\V1\Categories\Agriculture.html" />
+    <Content Include="Page-Resources\V1\Categories\Meat.html" />
+    <Content Include="Page-Resources\V1\Categories\Produce.html" />
+    <Content Include="Page-Resources\V1\Categories\promo-01.jpg" />
+    <Content Include="Page-Resources\V1\Categories\promo-02.jpg" />
+    <Content Include="Page-Resources\V1\Categories\promo-03.jpg" />
+    <Content Include="Page-Resources\V1\Categories\promo-04.jpg" />
+    <Content Include="Page-Resources\V1\Categories\Recipes.html" />
     <Content Include="Page-Resources\V1\Header\header.html" />
     <Content Include="Page-Resources\V1\Header\header_bg_V1.jpg" />
+    <Content Include="Page-Resources\V2\Categories\Agriculture.html" />
+    <Content Include="Page-Resources\V2\Categories\Meat.html" />
+    <Content Include="Page-Resources\V2\Categories\Produce.html" />
+    <Content Include="Page-Resources\V2\Categories\promo-01.jpg" />
+    <Content Include="Page-Resources\V2\Categories\promo-02.jpg" />
+    <Content Include="Page-Resources\V2\Categories\promo-03.jpg" />
+    <Content Include="Page-Resources\V2\Categories\promo-04.jpg" />
+    <Content Include="Page-Resources\V2\Categories\Recipes.html" />
     <Content Include="Page-Resources\V2\Header\header.html" />
     <Content Include="Page-Resources\V2\Header\header_bg_v2.jpg" />
-    <Content Include="Page-Resources\Version-Switch\Switch-Panel.html" />
     <Content Include="Repositories\Page-Resources\CSS\V1-V2-Styles.css" />
     <Content Include="Repositories\Page-Resources\JS\version-switch.js" />
     <Content Include="Repositories\Page-Resources\V1\Categories\Agriculture.html" />
@@ -159,6 +174,9 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Site-Migration\V1-V2-Styles.css" />
+    <Content Include="Site-Migration\version-switch.js" />
+    <Content Include="Site-Migration\Switch-Panel.html" />
     <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />

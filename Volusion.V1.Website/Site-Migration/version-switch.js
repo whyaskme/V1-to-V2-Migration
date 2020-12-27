@@ -20,6 +20,8 @@ msgDowngrade += '';
 msgDowngrade += '';
 msgDowngrade += '';
 
+//alert("Here...");
+
 $(document).ready(function () {
     $("#span-tenantId").html(objIdEmpty);
     $("#span-envLegacyLabel").html(envLegacyLabel);
@@ -28,10 +30,11 @@ $(document).ready(function () {
 
     // Reset radio button for page refresh
     $("input[name=opt-version][value=v1]").attr('checked', 'checked');
+
+    //alert("doc ready");
 });
 
-function expandMigrationPanel()
-{
+function expandMigrationPanel() {
     $("#div-version-switch-panel").toggle();
     $('input[name=opt-version]').attr("disabled", false);
 }
@@ -53,11 +56,11 @@ function migrateVersionToV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Upgrade:</b> We need to migrate your data (products, images, customers, orders, payment porcessors...etc) <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
+    msg += '<b>Upgrade:</b> We need to migrate your data => users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
-    msg += '<input type =\'button\' value=\'Upgrade\' class=\'button\' onclick=\'javascript: continueMigration(1);\' />';
+    msg += '<input type =\'button\' value=\'Upgrade Site\' class=\'button\' onclick=\'javascript: continueMigration(1);\' />';
     msg += '</div>';
 
     $("#div-system-messages").html(msg);
@@ -73,11 +76,11 @@ function migrateVersionFromV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Downgrade:</b> We need to migrate your data (products, images, customers, orders, payment porcessors...etc) <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
+    msg += '<b>Downgrade:</b> We need to migrate your data => users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
-    msg += '<input type =\'button\' value=\'Downgrade\' class=\'button\' onclick=\'javascript: continueMigration(0);\' />';
+    msg += '<input type =\'button\' value=\'Downgrade Site\' class=\'button\' onclick=\'javascript: continueMigration(0);\' />';
     msg += '</div>';
 
     $("#div-system-messages").html(msg);
@@ -142,8 +145,9 @@ function continueMigration(migrationType) {
 function cancelMigration(direction) {
     alert("cancelMigration > " + direction);
     $('input[name=opt-version]').attr("disabled", false);
+    resetMigration();
 }
 
 function resetMigration() {
-
+    alert("resetMigration UI");
 }

@@ -1,7 +1,7 @@
 ﻿const objIdEmpty = 'ObjectId("000000000000000000000000")';
 const objIdTenant = 'ObjectId("57b2229fd00bc11c2c18ec3d")';
 
-const envLegacyLabel = '<b>v1 (Legacy)</b>';
+const envLegacyLabel = '<b>v1 (Legacypayment porcessors)</b>';
 const envUpgradeLabel = '<b>v2 (MicroServices)</b>';
 
 const sourceDB = "Db -> localhost\Volusion-V1";
@@ -52,7 +52,7 @@ function migrateVersionToV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Upgrade:</b> We need to migrate your data (products, images, customers, orders, payment porcessors...etc) <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
+    msg += '<b>Upgrade:</b> We need to migrate your data => users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
@@ -72,7 +72,7 @@ function migrateVersionFromV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Downgrade:</b> We need to migrate your data (products, images, customers, orders, payment porcessors...etc) <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
+    msg += '<b>Downgrade:</b> We need to migrate your data => users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
