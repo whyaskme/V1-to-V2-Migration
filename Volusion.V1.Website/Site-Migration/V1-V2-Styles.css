@@ -4,15 +4,40 @@
     margin: 0;
     padding: 0;
     color: #282828;
+    line-height: 1.7;
 }
 
-label{
+#display_homepage_title {
+    border-bottom: solid 1px #808080;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+#div-page-container {
+    border: solid 0px #ff0000;
+    padding: 25px;
+}
+
+label {
     font-weight: bold;
 }
 
 a, a:visited {
     color: #221b43;
     text-decoration: none;
+}
+
+#div-site-menu
+{
+    padding: 10px;
+}
+
+a.a-menu-item {
+    font-weight: bold;
+    border-right: solid 1px #808080;
+    padding-right: 15px;
+    margin-right: 15px;
 }
 
 #span-header-label {

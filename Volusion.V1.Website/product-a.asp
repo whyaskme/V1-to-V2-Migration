@@ -13,7 +13,7 @@
 
         <div id="div-page-content">
 
-            <h2>Categories</h2>
+            <h2>Product "A"</h2>
 
             <p>
                 Content placeholder

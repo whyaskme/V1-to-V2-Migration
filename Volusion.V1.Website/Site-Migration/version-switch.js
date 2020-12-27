@@ -56,11 +56,11 @@ function migrateVersionToV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Upgrade:</b> We need to migrate your data => users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
+    msg += '<b>Upgrade:</b> We need to migrate your data => Merchant account, users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Forward</b> to the ' + envUpgradeLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
-    msg += '<input type =\'button\' value=\'Upgrade Site\' class=\'button\' onclick=\'javascript: continueMigration(1);\' />';
+    msg += '<input id=\'btn-migrate\' type=\'button\' value=\'Upgrade Site\' class=\'button\' onclick=\'javascript: continueMigration(1);\' />';
     msg += '</div>';
 
     $("#div-system-messages").html(msg);
@@ -76,11 +76,11 @@ function migrateVersionFromV2() {
 
     msg = "";
     msg += '<div>';
-    msg += '<b>Downgrade:</b> We need to migrate your data => users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
+    msg += '<b>Downgrade:</b> We need to migrate your data => Merchant account, users (admin, customer & affiliate), products, images, orders, providers (messaging, notification, payment & social)...etc. <i><b>Back</b> to the ' + envLegacyLabel + '</i> environment.';
     msg += '&nbsp;We will send you an email once finished. In the meantime, your site will continue to run as it is.';
     msg += '</div>';
     msg += '<div id=\'div-button-container\'>';
-    msg += '<input type =\'button\' value=\'Downgrade Site\' class=\'button\' onclick=\'javascript: continueMigration(0);\' />';
+    msg += '<input id=\'btn-migrate\' type=\'button\' value=\'Downgrade Site\' class=\'button\' onclick=\'javascript: continueMigration(0);\' />';
     msg += '</div>';
 
     $("#div-system-messages").html(msg);
@@ -102,8 +102,8 @@ function continueMigration(migrationType) {
     if (migrationType === 1) {
 
         $("#span-tenantId").html(objIdTenant);
-        msgTenantInfo = 'Called Api and got back TenantId: ' + objIdTenant + '.';
-        msgTenantInfo += ' Upgrading system now.';
+        msgTenantInfo = 'Called v2 Registration Api and got back TenantId: ' + objIdTenant + '.';
+        msgTenantInfo += ' Kickoff Upgrade ETL process now.';
 
         alert(msgTenantInfo);
 
@@ -116,14 +116,14 @@ function continueMigration(migrationType) {
         msg += '<div id=\'div-progress-bar-detail\'>Upgrade in progress...</div>';
         msg += '</div>';
         msg += '<div id=\'div-button-container\'>';
-        msg += '<input type =\'button\' value=\'Cancel Upgrade\' class=\'button\' onclick=\'javascript: cancelMigration(1);\' />';
+        msg += '<input id=\'btn-migrate\' type=\'button\' value=\'Cancel Upgrade\' class=\'button\' onclick=\'javascript: cancelMigration(1);\' />';
         msg += '</div>';
     }
     else {
 
         $("#span-tenantId").html('');
 
-        alert("Downgrading system now.");
+        alert("Kickoff Downgrade ETL process now.");
 
         msg += '<div>';
         msg += 'Downgrading from ' + envUpgradeLabel + '</i> to the ' + envLegacyLabel + ' environment.';
@@ -132,7 +132,7 @@ function continueMigration(migrationType) {
         msg += '<div id=\'div-progress-bar-detail\'>Downgrade in progress...</div>';
         msg += '</div>';
         msg += '<div id=\'div-button-container\'>';
-        msg += '<input type =\'button\' value=\'Cancel Downgrade\' class=\'button\' onclick=\'javascript: cancelMigration(0);\' />';
+        msg += '<input id=\'btn-migrate\' type=\'button\' value=\'Cancel Downgrade\' class=\'button\' onclick=\'javascript: cancelMigration(0);\' />';
         msg += '</div>';
     }
 
