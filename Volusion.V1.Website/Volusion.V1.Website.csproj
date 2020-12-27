@@ -100,6 +100,8 @@
     <Content Include="Page-Resources\V2\Categories\Recipes.html" />
     <Content Include="Page-Resources\V2\Header\header.html" />
     <Content Include="Page-Resources\V2\Header\header_bg_v2.jpg" />
+    <Content Include="Pages\Headers\header.html" />
+    <Content Include="Pages\Headers\header_bg_V1.jpg" />
     <Content Include="product-a.asp" />
     <Content Include="Sample-Resources\1592329242538.jpg" />
     <Content Include="Sample-Resources\about.jpg" />
@@ -158,6 +160,113 @@
     <Content Include="Site-Migration\V1-V2-Styles.css" />
     <Content Include="Site-Migration\version-switch.js" />
     <Content Include="Site-Migration\Switch-Panel.html" />
+    <Content Include="Pages\Categories\default.htm" />
+    <Content Include="Pages\Categories\default_files\ajax-loader.gif" />
+    <Content Include="Pages\Categories\default_files\clear1x1.gif" />
+    <Content Include="Pages\Categories\default_files\content.css" />
+    <Content Include="Pages\Categories\default_files\css2.css" />
+    <Content Include="Pages\Categories\default_files\default.css" />
+    <Content Include="Pages\Categories\default_files\design-toolkit.js" />
+    <Content Include="Pages\Categories\default_files\Divider_Horizontal.gif" />
+    <Content Include="Pages\Categories\default_files\header_bg.png" />
+    <Content Include="Pages\Categories\default_files\javascripts.js" />
+    <Content Include="Pages\Categories\default_files\jquery-ui.css" />
+    <Content Include="Pages\Categories\default_files\jquery-ui.js" />
+    <Content Include="Pages\Categories\default_files\jquery.js" />
+    <Content Include="Pages\Categories\default_files\ms-patent%2520leather%2520shoe-1.jpg" />
+    <Content Include="Pages\Categories\default_files\mt-cardigan-1.jpg" />
+    <Content Include="Pages\Categories\default_files\MW-BShorts-1.jpg" />
+    <Content Include="Pages\Categories\default_files\paypal-rest-default-buttons.js" />
+    <Content Include="Pages\Categories\default_files\productlist.js" />
+    <Content Include="Pages\Categories\default_files\snippets.css" />
+    <Content Include="Pages\Categories\default_files\soft_add.css" />
+    <Content Include="Pages\Categories\default_files\soft_add.js" />
+    <Content Include="Pages\Categories\default_files\soft_add_mult.js" />
+    <Content Include="Pages\Categories\default_files\style-editor-defaults.css" />
+    <Content Include="Pages\Categories\default_files\template.css" />
+    <Content Include="Pages\Categories\default_files\template.js" />
+    <Content Include="Pages\Categories\default_files\theme-icons-base.css" />
+    <Content Include="Pages\Categories\default_files\vnav.css" />
+    <Content Include="Pages\Categories\default_files\vnav.js" />
+    <Content Include="Pages\Categories\default_files\volusion.js" />
+    <Content Include="Pages\Products\default.htm" />
+    <Content Include="Pages\Products\default_files\a.html" />
+    <Content Include="Pages\Products\default_files\addthis_widget.js" />
+    <Content Include="Pages\Products\default_files\all.js" />
+    <Content Include="Pages\Products\default_files\all_002.js" />
+    <Content Include="Pages\Products\default_files\aroma-1.jpg" />
+    <Content Include="Pages\Products\default_files\clear1x1.gif" />
+    <Content Include="Pages\Products\default_files\content.css" />
+    <Content Include="Pages\Products\default_files\css2.css" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Bottom.gif" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Left.gif" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Left_Bottom.gif" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Left_Top.gif" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Right.gif" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Right_Bottom.gif" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Right_Top.gif" />
+    <Content Include="Pages\Products\default_files\DBox_Border_Top.gif" />
+    <Content Include="Pages\Products\default_files\default.css" />
+    <Content Include="Pages\Products\default_files\design-toolkit.js" />
+    <Content Include="Pages\Products\default_files\expand_tab_back.gif" />
+    <Content Include="Pages\Products\default_files\expand_tab_left.gif" />
+    <Content Include="Pages\Products\default_files\expand_tab_right.gif" />
+    <Content Include="Pages\Products\default_files\Grid_Divider_Vertical.gif" />
+    <Content Include="Pages\Products\default_files\header_bg.png" />
+    <Content Include="Pages\Products\default_files\heading_history.gif" />
+    <Content Include="Pages\Products\default_files\javascripts.js" />
+    <Content Include="Pages\Products\default_files\jquery-ui.css" />
+    <Content Include="Pages\Products\default_files\jquery-ui.js" />
+    <Content Include="Pages\Products\default_files\jquery.js" />
+    <Content Include="Pages\Products\default_files\like.html" />
+    <Content Include="Pages\Products\default_files\like_data\OqOE21UvWe3.png" />
+    <Content Include="Pages\Products\default_files\moatframe.js" />
+    <Content Include="Pages\Products\default_files\ms-patent%2520leather%2520shoe-1.jpg" />
+    <Content Include="Pages\Products\default_files\ms-patent%2520leather%2520shoe-2T.jpg" />
+    <Content Include="Pages\Products\default_files\mt-cardigan-2.jpg" />
+    <Content Include="Pages\Products\default_files\mt-cardigan-2S.jpg" />
+    <Content Include="Pages\Products\default_files\mt-cardigan-2T.jpg" />
+    <Content Include="Pages\Products\default_files\MW-BShorts-1.jpg" />
+    <Content Include="Pages\Products\default_files\MW-BShorts-2T.jpg" />
+    <Content Include="Pages\Products\default_files\OBox_Border_Left_Top_Opt.gif" />
+    <Content Include="Pages\Products\default_files\OBox_Border_Right_Top_Opt.gif" />
+    <Content Include="Pages\Products\default_files\Options_Text_Choose.gif" />
+    <Content Include="Pages\Products\default_files\paypal-rest-default-buttons.js" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Bottom.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Left.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Left_Bottom.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Left_Top.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Left_Top_Opt.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Right.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Right_Bottom.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Right_Top.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Right_Top_Opt.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Border_Top.gif" />
+    <Content Include="Pages\Products\default_files\PBox_Opt_Back.gif" />
+    <Content Include="Pages\Products\default_files\pinit_main.js" />
+    <Content Include="Pages\Products\default_files\product_details.js" />
+    <Content Include="Pages\Products\default_files\RBox_Border_Left_Top.gif" />
+    <Content Include="Pages\Products\default_files\sh.html" />
+    <Content Include="Pages\Products\default_files\shadowbox.css" />
+    <Content Include="Pages\Products\default_files\shadowbox.js" />
+    <Content Include="Pages\Products\default_files\small-p-button.png" />
+    <Content Include="Pages\Products\default_files\smartmatch.js" />
+    <Content Include="Pages\Products\default_files\snippets.css" />
+    <Content Include="Pages\Products\default_files\soft_add.css" />
+    <Content Include="Pages\Products\default_files\soft_add.js" />
+    <Content Include="Pages\Products\default_files\style-editor-defaults.css" />
+    <Content Include="Pages\Products\default_files\template.css" />
+    <Content Include="Pages\Products\default_files\template.js" />
+    <Content Include="Pages\Products\default_files\theme-icons-base.css" />
+    <Content Include="Pages\Products\default_files\vnav.css" />
+    <Content Include="Pages\Products\default_files\vnav.js" />
+    <Content Include="Pages\Products\default_files\volusion.js" />
+    <Content Include="Pages\Products\default_files\vzoom.css" />
+    <Content Include="Pages\Products\default_files\vzoom.gif" />
+    <Content Include="Pages\Products\default_files\vzoom.js" />
+    <Content Include="Pages\Products\default_files\WA-Peeptoe-2T.jpg" />
+    <Content Include="Pages\Products\default_files\WT-Peasant-1.jpg" />
+    <Content Include="Pages\Products\default_files\WT-Peasant-2T.jpg" />
     <Content Include="WebForm1.aspx" />
     <None Include="Notes\Request_Response_Example.json" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
@@ -268,6 +377,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Pages\Products\default_files\300lo.json" />
+    <Content Include="Pages\Products\default_files\_ate.config_resp" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -281,7 +392,10 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pages\Images\" />
+    <Folder Include="Pages\Menus\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

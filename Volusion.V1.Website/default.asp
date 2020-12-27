@@ -10,7 +10,7 @@
 
     <div id="div-page-container">
 
-        <!-- #include virtual="/Page-Resources/V1/Header/header.html" -->
+        <!-- #include virtual="/Pages/Headers/header.html" -->
 
         <div id="div-page-content">
 

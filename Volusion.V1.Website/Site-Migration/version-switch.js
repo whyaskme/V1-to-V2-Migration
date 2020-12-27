@@ -34,6 +34,10 @@ $(document).ready(function () {
     //alert("doc ready");
 });
 
+function selectSite(selectedMerchant) {
+    alert("Merchant: " + selectedMerchant);
+}
+
 function expandMigrationPanel() {
     $("#div-version-switch-panel").toggle();
     $('input[name=opt-version]').attr("disabled", false);
