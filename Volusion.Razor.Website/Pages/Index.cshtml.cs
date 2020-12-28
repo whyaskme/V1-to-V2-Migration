@@ -17,7 +17,18 @@ namespace Volusion.Razor.Website.Pages
             _logger = logger;
         }
 
+        [BindProperty(SupportsGet = true)]
+        public string FirstName { get; set; }
+
         public void OnGet()
+        {
+            if(string.IsNullOrEmpty(FirstName))
+            {
+                FirstName = "User";
+            }
+        }
+
+        public void OnPost()
         {
 
         }

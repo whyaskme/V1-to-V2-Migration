@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volusion.MigrationServices"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volusion.V2.Tenent.Websites", "Volusion.V2.Tenent.Websites\Volusion.V2.Tenent.Websites.csproj", "{44C84E8D-24A0-4551-8D8D-93025635F7C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volusion.Razor.Website", "Volusion.Razor.Website\Volusion.Razor.Website.csproj", "{E20A9DAA-A528-48AE-96AB-CC60BF6405CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volusion.Razor.Website", "Volusion.Razor.Website\Volusion.Razor.Website.csproj", "{E20A9DAA-A528-48AE-96AB-CC60BF6405CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
