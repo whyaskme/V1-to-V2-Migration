@@ -7,6 +7,14 @@
     line-height: 1.7;
 }
 
+.sidebar-wrapper,
+.v-product-grid,
+.footer__section,
+#table-search-filtering 
+{
+    border: solid 1px #ff0000;
+}
+
 #div-header, #div-site-menu, #span-header-label, #form-main {
     display: none;
     text-align: center;

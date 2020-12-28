@@ -1,4 +1,6 @@
-Terminology: v1 monolithic, v2 multi-tenancy PK = TenantId > MerchantId > SiteId?
+Feature parity docs
+
+Terminology: v1 monolithic, v2 multi-tenancy PK = TenantId > MerchantId-Storefront > SiteId?
 
 Source Control: Branching strategy? Main > Dev > bugfix/feature?
 
@@ -12,7 +14,7 @@ Entities:
 	Users: 
 		admin, customer & affiliate
 
-	Products: 
+	Products: Cart
 
 	Images: 
 		stored as blobs or disk with paths in products table?
@@ -25,6 +27,6 @@ Entities:
 Image handling: 
 
 Page templates: 
-	Are page templates same between v1 > v2?
+	Are page templates (structure) same between v1 > v2? Can merchant design own page template?
 
 ETL process: 

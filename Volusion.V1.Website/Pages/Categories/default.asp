@@ -684,7 +684,7 @@ var SearchParams = 'searching=Y&sort=13&cat=1816&show=30&page=1';
 			<input type="hidden" name="Search" value="">
 			<input type="hidden" name="Cat" value="1816">
 			
-<table width="100%" cellspacing="0" cellpadding="4" border="0">
+<table id="table-search-filtering" width="100%" cellspacing="0" cellpadding="4" border="0">
   <tbody><tr> 
 	<td>
 	
