@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Volusion.Razor.Website.Models
 {
-    public class Member
+    public class MemberModel
     {
         [BindProperty]
         public string FirstName { get; set; }

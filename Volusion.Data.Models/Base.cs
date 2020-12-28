@@ -33,7 +33,7 @@ namespace Volusion.Data.Models
 
             Enabled = true;
 
-            Name = "";
+            Name = string.Empty;
         }
         /// <summary>
         /// 

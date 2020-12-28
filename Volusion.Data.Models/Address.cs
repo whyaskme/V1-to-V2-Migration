@@ -21,8 +21,8 @@ namespace Volusion.Data.Models
             CityId = ObjectId.Empty;
             ZipCode = 00000;
             TimeZoneId = ObjectId.Empty;
-            Address1 = "";
-            Address2 = "";
+            Address1 = string.Empty;
+            Address2 = string.Empty;
         }
         public ObjectId CountryId { get; set; }
         public ObjectId StateId { get; set; }

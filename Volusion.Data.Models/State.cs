@@ -21,7 +21,7 @@ namespace Volusion.Data.Models
         {
             _t = "State";
 
-            Abbr = "";
+            Abbr = string.Empty;
 
             CountryId = ObjectId.Empty;
             TimeZoneId = ObjectId.Empty;
