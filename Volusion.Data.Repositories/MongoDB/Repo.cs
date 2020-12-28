@@ -39,7 +39,7 @@ namespace Data.Repositories.MongoDB
         IMongoCollection<County> _mongoCountyCollection;
         IMongoCollection<City> _mongoCityCollection;
         IMongoCollection<ZipCode> _mongoZipCodeCollection;
-        IMongoCollection<AreaCode> _mongoAreaCodeCollection;
+        IMongoCollection<AreaCodeModel> _mongoAreaCodeCollection;
         IMongoCollection<Event> _mongoEventCollection;
         IMongoCollection<Location> _mongoLocationCollection;
         IMongoCollection<User> _mongoUserCollection;
@@ -276,7 +276,7 @@ namespace Data.Repositories.MongoDB
             try
             {
                 _mongoZipCodeCollection = _mongoDatabase.GetCollection<ZipCode>("ZipCodes");
-                _mongoAreaCodeCollection = _mongoDatabase.GetCollection<AreaCode>("AreaCodes");
+                _mongoAreaCodeCollection = _mongoDatabase.GetCollection<AreaCodeModel>("AreaCodes");
 
                 var _zipcodes = _mongoZipCodeCollection.Find<ZipCode>(s => s._t == "ZipCode").SortBy(s => s.Zip).ToListAsync<ZipCode>().Result;
                 foreach (ZipCode _zipCode in _zipcodes)
@@ -288,11 +288,11 @@ namespace Data.Repositories.MongoDB
                             var _tmpAreaCodes = _zipCode.AreaCodes.Split(',');
                             foreach (string _tmpAreaCode in _tmpAreaCodes)
                             {
-                                var _areaCodes = _mongoAreaCodeCollection.Find<AreaCode>(s => s.AreaCodeNumber == Convert.ToInt16(_tmpAreaCode) && s.CityId == _zipCode.CityId).ToListAsync<AreaCode>().Result;
+                                var _areaCodes = _mongoAreaCodeCollection.Find<AreaCodeModel>(s => s.AreaCodeNumber == Convert.ToInt16(_tmpAreaCode) && s.CityId == _zipCode.CityId).ToListAsync<AreaCodeModel>().Result;
                                 if (_areaCodes.Count < 1)
                                 {
                                     // Create the AreaCode
-                                    AreaCode _newAreaCode = new AreaCode();
+                                    AreaCodeModel _newAreaCode = new AreaCodeModel();
                                     _newAreaCode.AreaCodeNumber = Convert.ToInt16(_tmpAreaCode);
                                     _newAreaCode.CityId = _zipCode.CityId;
                                     _newAreaCode.CountryId = _zipCode.CountryId;
@@ -309,11 +309,11 @@ namespace Data.Repositories.MongoDB
                         }
                         else
                         {
-                            var _areaCodes = _mongoAreaCodeCollection.Find<AreaCode>(s => s.AreaCodeNumber == Convert.ToInt16(_zipCode.AreaCodes) && s.CityId == _zipCode.CityId).ToListAsync<AreaCode>().Result;
+                            var _areaCodes = _mongoAreaCodeCollection.Find<AreaCodeModel>(s => s.AreaCodeNumber == Convert.ToInt16(_zipCode.AreaCodes) && s.CityId == _zipCode.CityId).ToListAsync<AreaCodeModel>().Result;
                             if (_areaCodes.Count < 1)
                             {
                                 // Create the AreaCode
-                                AreaCode _newAreaCode = new AreaCode();
+                                AreaCodeModel _newAreaCode = new AreaCodeModel();
                                 _newAreaCode.AreaCodeNumber = Convert.ToInt16(_zipCode.AreaCodes);
                                 _newAreaCode.CityId = _zipCode.CityId;
                                 _newAreaCode.CountryId = _zipCode.CountryId;

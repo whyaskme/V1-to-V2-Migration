@@ -27,10 +27,10 @@ namespace Volusion.Data.Models
 
             IsLoggedIn = false;
 
-            FirstName = "";
-            LastName = "";
+            FirstName = string.Empty;
+            LastName = string.Empty;
 
-            Pwd = "";
+            Pwd = string.Empty;
 
             Gender = 0;
 
@@ -56,10 +56,10 @@ namespace Volusion.Data.Models
             DeviceType = 0;
             IsLoggedIn = false;
 
-            FirstName = "";
-            LastName = "";
+            FirstName = string.Empty;
+            LastName = string.Empty;
 
-            Pwd = "";
+            Pwd = string.Empty;
 
             Gender = 0;
 

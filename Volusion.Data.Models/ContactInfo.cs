@@ -13,12 +13,12 @@ namespace Volusion.Data.Models
     {
         public ContactInfo()
         {
-            Address = new Address();
+            Address = new AddressModel();
             Email = new Email();
             Phone = new Phone();
         }
 
-        public Address Address { get; set; }
+        public AddressModel Address { get; set; }
         public Email Email { get; set; }
         public Phone Phone { get; set; }
     }
